@@ -23,7 +23,7 @@ export default function AboutSection() {
               // Creative Technologist
             </span>
           </div>
-          <h2 className="font-extrabold text-4xl sm:text-6xl md:text-7xl leading-[0.80] tracking-tight uppercase font-['Syne',sans-serif] m-0 text-black">
+          <h2 className="font-extrabold text-3xl sm:text-6xl md:text-7xl leading-[0.85] tracking-tight uppercase font-['Syne',sans-serif] m-0 text-black">
             MEET ZIELL
           </h2>
           <p className="mt-4 text-base sm:text-xl text-neutral-800 font-medium leading-relaxed">

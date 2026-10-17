@@ -105,24 +105,24 @@ export default function ProjectsSection() {
   });
 
   return (
-    <section id="showcase" className="w-full bg-[#ffffff] py-20 px-4 sm:px-8 border-t border-black">
+    <section id="showcase" className="w-full bg-[#ffffff] py-14 sm:py-20 px-4 sm:px-8 border-t border-black">
       <div className="max-w-[1440px] mx-auto">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-5 sm:gap-6 mb-8 sm:mb-12">
           <div>
-            <div className="flex items-center gap-2 mb-3">
+            <div className="flex items-center gap-2 mb-2 sm:mb-3">
               <Sticker color="sunburst" rotate={3} label="SELECTED ARCHIVE" />
-              <span className="text-xs font-bold uppercase tracking-wider text-neutral-500">
+              <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-neutral-500">
                 // 2024 — 2026 WORKS
               </span>
             </div>
-            <h2 className="font-extrabold text-5xl sm:text-7xl md:text-8xl leading-[0.78] tracking-tight uppercase font-['Syne',sans-serif] m-0">
+            <h2 className="font-extrabold text-3xl sm:text-6xl md:text-8xl leading-[0.85] tracking-tight uppercase font-['Syne',sans-serif] m-0">
               FEATURED WORKS
             </h2>
           </div>
 
           {/* Filter Pills: 1600px radius, 1px black outline */}
-          <div className="flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
             {[
               { id: 'all', label: 'All Works' },
               { id: 'vfx', label: 'VFX & 3D CGI' },
@@ -131,7 +131,7 @@ export default function ProjectsSection() {
               <button
                 key={tab.id}
                 onClick={() => setFilter(tab.id)}
-                className={`px-5 py-2.5 rounded-full border border-black font-bold text-xs uppercase tracking-[0.032em] transition-all cursor-pointer ${
+                className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-black font-bold text-[11px] sm:text-xs uppercase tracking-[0.032em] transition-all cursor-pointer ${
                   filter === tab.id
                     ? 'bg-black text-white'
                     : 'bg-white text-black hover:bg-[#e9e9e9]'

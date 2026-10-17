@@ -5,19 +5,18 @@ export default function Marquee() {
     '✦ ZIELL CREATIVE & TECH STUDIO',
     '✦ VFX & CGI SIMULATIONS',
     '✦ CREATIVE CODE & FULLSTACK TOOLS',
-    '✦ AVAILABLE FOR GLOBAL COMMISSIONS',
+    '✦ AVAILABLE FOR COMMISSIONS',
     '✦ ZIELLVFX.COM / ZIELL.TECH',
-    '✦ BUILT WITH SLUSH DESIGN SYSTEM',
-    '✦ PROCEDURAL 3D • HOUDINI • THREE.JS',
+    '✦ SLUSH DESIGN SYSTEM',
   ];
 
   return (
-    <div className="w-full bg-[#000000] border-y border-[#000000] overflow-hidden py-2 select-none z-50 relative">
+    <div className="w-full max-w-full bg-[#000000] border-y border-[#000000] overflow-hidden py-2 select-none z-50 relative">
       <div className="animate-marquee whitespace-nowrap flex items-center">
-        {items.concat(items).map((text, idx) => (
+        {items.concat(items).concat(items).map((text, idx) => (
           <span
             key={idx}
-            className="text-white text-[12px] sm:text-[13px] font-bold tracking-[0.032em] uppercase mx-4 inline-block font-sans"
+            className="text-white text-[11px] sm:text-[13px] font-bold tracking-[0.032em] uppercase mx-3 sm:mx-4 inline-block font-sans"
           >
             {text}
           </span>
