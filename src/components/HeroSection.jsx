@@ -2,11 +2,13 @@ import React from 'react';
 import { Link2, MessageCircle, MapPin } from 'lucide-react';
 import Sticker from './Sticker';
 import Reveal from './Reveal';
+import BackgroundDecor from './BackgroundDecor';
 import { profile } from '../data/profile';
 
 export default function HeroSection() {
   return (
     <section id="hero" className="relative w-full bg-[#dceeff] pt-10 sm:pt-16 pb-16 sm:pb-24 px-4 sm:px-8 overflow-hidden flex flex-col justify-center items-center">
+      <BackgroundDecor />
       <div className="max-w-[1000px] w-full mx-auto relative z-10 flex flex-col items-center text-center">
         {/* Profile Avatar */}
         <Reveal delay={0}>

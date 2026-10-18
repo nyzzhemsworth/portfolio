@@ -3,10 +3,11 @@ import { ArrowUpRight } from 'lucide-react';
 import Sticker from './Sticker';
 import BrandIcon from './BrandIcons';
 import Reveal from './Reveal';
+import BackgroundDecor from './BackgroundDecor';
 import { profile, channelLinks, socialLinks } from '../data/profile';
 
 // ============ Kartu untuk link channel utama (besar) ============
-function ChannelCard({ link }) {
+function ChannelCard({ link, rotate = -2 }) {
   return (
     <a
       href={link.url}
@@ -15,7 +16,7 @@ function ChannelCard({ link }) {
       className="group rounded-[24px] sm:rounded-[28px] border border-black bg-white p-6 sm:p-8 flex flex-col min-h-[200px] justify-between transition-all hover:-translate-y-1 hover:shadow-[6px_6px_0_0_#000] cursor-pointer"
     >
       <div className="flex items-start justify-between">
-        <Sticker color={link.color} rotate={-2} icon={<BrandIcon name={link.brand} className="w-3.5 h-3.5" />} label={link.label} />
+        <Sticker color={link.color} rotate={rotate} icon={<BrandIcon name={link.brand} className="w-3.5 h-3.5" />} label={link.label} />
         <div className="w-10 h-10 rounded-full border border-black bg-white flex items-center justify-center text-black group-hover:bg-black group-hover:text-white transition-colors">
           <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
         </div>
@@ -52,8 +53,9 @@ function SocialCard({ link }) {
 
 export default function LinksSection() {
   return (
-    <section id="links" className="w-full bg-[#ffffff] py-14 sm:py-20 px-4 sm:px-8 border-t border-black">
-      <div className="max-w-[1000px] mx-auto">
+    <section id="links" className="relative w-full bg-[#ffffff] py-14 sm:py-20 px-4 sm:px-8 border-t border-black overflow-hidden">
+      <BackgroundDecor />
+      <div className="relative z-10 max-w-[1000px] mx-auto">
         {/* Section Header */}
         <Reveal className="flex flex-col md:flex-row md:items-end justify-between gap-5 sm:gap-6 mb-8 sm:mb-12">
           <div>
@@ -73,7 +75,7 @@ export default function LinksSection() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-5">
           {channelLinks.map((link, i) => (
             <Reveal key={link.id} delay={i * 90}>
-              <ChannelCard link={link} />
+              <ChannelCard link={link} rotate={[-3, 3, -1][i % 3]} />
             </Reveal>
           ))}
         </div>

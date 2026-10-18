@@ -7,8 +7,8 @@ export const profile = {
   name: 'ZIELL',
   handle: '@t4rake',
   initials: 'Z',
-  // Ganti pakai foto kamu, contoh: '/me.jpg' (taruh file-nya di folder "public/")
-  avatar: '',
+  // Foto profil (file sudah ditaruh di folder "public/")
+  avatar: '/pswsbhar.jpg',
   status: 'Open for collab',
   location: 'Indonesia',
   headline: 'MULTI-DISCIPLINARY CREATOR',
