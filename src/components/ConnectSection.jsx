@@ -3,6 +3,7 @@ import { Mail, Check, Copy, ArrowUpRight } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import Sticker from './Sticker';
 import BrandIcon from './BrandIcons';
+import Reveal from './Reveal';
 import { profile, contact } from '../data/profile';
 
 export default function ConnectSection({ id = 'contact' }) {
@@ -37,7 +38,7 @@ export default function ConnectSection({ id = 'contact' }) {
   return (
     <section id={id} className="w-full bg-[#cccccc] py-16 sm:py-24 px-4 sm:px-8 relative overflow-hidden border-t border-black">
       <div className="max-w-[1000px] mx-auto relative z-10">
-        <div className="flex flex-col items-start justify-between gap-8 mb-10 sm:mb-16">
+        <Reveal className="flex flex-col items-start justify-between gap-8 mb-10 sm:mb-16">
           <div className="max-w-2xl">
             <div className="flex flex-wrap items-center gap-2 mb-3 sm:mb-4">
               <Sticker color="mint-pop" rotate={-3} label="CONTACT PERSON" />
@@ -50,10 +51,10 @@ export default function ConnectSection({ id = 'contact' }) {
               Questions, collabs, or just want to say hi — reach me directly on the channel below.
             </p>
           </div>
-        </div>
+        </Reveal>
 
         {/* WhatsApp Direct Card */}
-        <div className="rounded-[24px] sm:rounded-[30px] border border-black bg-white p-5 sm:p-10 mb-6 flex flex-col md:flex-row items-center justify-between gap-5">
+        <Reveal delay={80} className="rounded-[24px] sm:rounded-[30px] border border-black bg-white p-5 sm:p-10 mb-6 flex flex-col md:flex-row items-center justify-between gap-5">
           <div className="flex items-center gap-3.5 sm:gap-4 w-full md:w-auto">
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border border-black bg-[#55db9c] flex items-center justify-center text-black shrink-0">
               <BrandIcon name="whatsapp" className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -86,10 +87,10 @@ export default function ConnectSection({ id = 'contact' }) {
               <span>{copied ? 'Copied!' : 'Copy Number'}</span>
             </button>
           </div>
-        </div>
+        </Reveal>
 
         {/* Email Direct Card */}
-        <div className="rounded-[24px] sm:rounded-[30px] border border-black bg-white p-5 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-5">
+        <Reveal delay={140} className="rounded-[24px] sm:rounded-[30px] border border-black bg-white p-5 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-5">
           <div className="flex items-center gap-3.5 sm:gap-4 w-full md:w-auto">
             <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border border-black bg-[#ffd731] flex items-center justify-center text-black shrink-0">
               <Mail className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -110,7 +111,7 @@ export default function ConnectSection({ id = 'contact' }) {
             {copied ? <Check className="w-4 h-4 text-emerald-400" /> : <Copy className="w-4 h-4" />}
             <span>{copied ? 'Copied!' : 'Copy Email'}</span>
           </button>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

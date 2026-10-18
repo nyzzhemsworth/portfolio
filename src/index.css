@@ -70,3 +70,55 @@ body {
 .border-carbon {
   border-color: #000000;
 }
+
+/* ------------------------------------------------------------
+   Smooth site-wide scrolling
+   ------------------------------------------------------------ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------------------
+   Scroll reveal animation
+   ------------------------------------------------------------ */
+.reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-y, 24px));
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Floating animation untuk elemen kecil (mis. badge status) */
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-float-soft {
+  animation: float-soft 3.5s ease-in-out infinite;
+}
+
+/* ------------------------------------------------------------
+   Accessibility: respect user's reduced-motion preference
+   ------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal,
+  .animate-float-soft,
+  .animate-marquee,
+  .sticker-hover {
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
