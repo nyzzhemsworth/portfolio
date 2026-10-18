@@ -1,13 +1,14 @@
 import React from 'react';
+import { profile } from '../data/profile';
 
 export default function Marquee() {
   const items = [
-    '✦ ZIELL CREATIVE & TECH STUDIO',
-    '✦ VFX & CGI SIMULATIONS',
-    '✦ CREATIVE CODE & FULLSTACK TOOLS',
-    '✦ AVAILABLE FOR COMMISSIONS',
-    '✦ ZIELLVFX.COM / ZIELL.TECH',
-    '✦ SLUSH DESIGN SYSTEM',
+    `✦ ${profile.name} — ${profile.handle}`,
+    '✦ VIDEO EDITING',
+    '✦ WEB DEV',
+    '✦ BOT & AUTOMATION',
+    '✦ GRAPHIC DESIGN',
+    '✦ OPEN FOR COLLAB',
   ];
 
   return (
