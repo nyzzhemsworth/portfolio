@@ -25,7 +25,7 @@ export const channelLinks = [
     id: 'whatsapp',
     label: 'WhatsApp Channel',
     sub: 'Updates, drops & announcements',
-    url: 'https://whatsapp.com/channel/000000000000000000',
+    url: 'https://whatsapp.com/channel/0029Vb813cDIiRok5u22TE0g',
     brand: 'whatsapp',
     color: 'mint-pop',
   },
@@ -33,7 +33,7 @@ export const channelLinks = [
     id: 'telegram',
     label: 'Telegram',
     sub: 'Channel & files sharing',
-    url: 'https://t.me/yourchannel',
+    url: 'https://t.me/zielll4mp',
     brand: 'telegram',
     color: 'electric-blue',
   },
@@ -41,7 +41,7 @@ export const channelLinks = [
     id: 'discord',
     label: 'Discord Server',
     sub: 'Hang out, chat & community',
-    url: 'https://discord.gg/yourserver',
+    url: 'https://discord.gg/ZvDzp3ebTd',
     brand: 'discord',
     color: 'voltage-violet',
   },
@@ -49,15 +49,14 @@ export const channelLinks = [
 
 // ---- SOSIAL MEDIA (kartu kecil) -----------------------------
 export const socialLinks = [
-  { id: 'tiktok', label: 'TikTok', url: 'https://tiktok.com/@ziell', brand: 'tiktok', color: 'carbon' },
-  { id: 'instagram', label: 'Instagram', url: 'https://instagram.com/ziell', brand: 'instagram', color: 'lavender' },
-  { id: 'youtube', label: 'YouTube', url: 'https://youtube.com/@ziell', brand: 'youtube', color: 'ember' },
-  { id: 'github', label: 'GitHub', url: 'https://github.com/ziell', brand: 'github', color: 'paper-white' },
+  { id: 'tiktok', label: 'TikTok', url: 'https://tiktok.com/@t4rake', brand: 'tiktok', color: 'carbon' },
+  { id: 'instagram', label: 'Instagram', url: 'https://instagram.com/ackles.amv', brand: 'instagram', color: 'lavender' },
+  { id: 'github', label: 'GitHub', url: 'https://github.com/nyzzhemsworth', brand: 'github', color: 'paper-white' },
 ];
 
 // ---- KONTAK PERSON ------------------------------------------
 export const contact = {
   // Nomor WhatsApp kamu (format internasional tanpa "+" & spasi), contoh: '6281234567890'
-  whatsappNumber: '6281234567890',
-  email: 'hello@ziell.com',
+  whatsappNumber: '6283199312511',
+  email: 'hello@ziellvfx.com',
 };
