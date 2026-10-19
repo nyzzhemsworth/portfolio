@@ -10,9 +10,9 @@ export default function Footer() {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   const exploreLinks = [
-    { label: 'Home', href: '#hero', icon: <Home className="w-4 h-4" /> },
-    { label: 'My Links', href: '#links', icon: <Link2 className="w-4 h-4" /> },
-    { label: 'Contact', href: '#contact', icon: <MessageCircle className="w-4 h-4" /> },
+    { label: 'Home', href: '/', icon: <Home className="w-4 h-4" /> },
+    { label: 'My Links', href: '/links', icon: <Link2 className="w-4 h-4" /> },
+    { label: 'Contact', href: '/contact', icon: <MessageCircle className="w-4 h-4" /> },
   ];
 
   return (
@@ -50,7 +50,7 @@ export default function Footer() {
                 <li key={l.label}>
                   <a
                     href={l.href}
-                    onClick={l.href === '#hero' ? scrollToTop : undefined}
+                    onClick={l.href === '/' ? scrollToTop : undefined}
                     className="inline-flex items-center gap-2 text-sm font-semibold text-neutral-800 hover:text-black hover:underline decoration-black underline-offset-4 transition-colors"
                   >
                     {l.icon}

@@ -6,15 +6,15 @@ export default function Navbar({ onContactClick }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const pills = [
-    { href: '#links', label: 'My Links' },
-    { href: '#contact', label: 'Contact' },
+    { href: '/links', label: 'My Links' },
+    { href: '/contact', label: 'Contact' },
   ];
 
   return (
     <header className="sticky top-0 z-40 w-full px-3 sm:px-8 py-2.5 sm:py-3 backdrop-blur-md bg-[#dceeff]/85 border-b border-black/10 transition-colors">
       <div className="max-w-[1440px] mx-auto flex items-center justify-between gap-2 sm:gap-4">
         {/* Left: Logo Mark */}
-        <a href="#hero" className="flex items-center gap-2 sm:gap-3">
+        <a href="/" className="flex items-center gap-2 sm:gap-3">
           <span className="w-9 h-9 sm:w-11 sm:h-11 rounded-full border border-black bg-white flex items-center justify-center font-extrabold text-base sm:text-xl text-black hover:rotate-12 transition-transform select-none">
             {profile.initials}
           </span>

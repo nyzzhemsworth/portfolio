@@ -53,7 +53,7 @@ function SocialCard({ link }) {
 
 export default function LinksSection() {
   return (
-    <section id="links" className="relative w-full bg-[#ffffff] py-14 sm:py-20 px-4 sm:px-8 border-t border-black overflow-hidden">
+    <section id="links" className="relative w-full scroll-mt-24 bg-[#ffffff] py-14 sm:py-20 px-4 sm:px-8 border-t border-black overflow-hidden">
       <BackgroundDecor />
       <div className="relative z-10 max-w-[1000px] mx-auto">
         {/* Section Header */}

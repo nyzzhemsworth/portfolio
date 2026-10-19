@@ -7,7 +7,7 @@ import { profile } from '../data/profile';
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="relative w-full bg-[#dceeff] pt-10 sm:pt-16 pb-16 sm:pb-24 px-4 sm:px-8 overflow-hidden flex flex-col justify-center items-center">
+    <section id="hero" className="relative w-full scroll-mt-24 bg-[#dceeff] pt-10 sm:pt-16 pb-16 sm:pb-24 px-4 sm:px-8 overflow-hidden flex flex-col justify-center items-center">
       <BackgroundDecor />
       <div className="max-w-[1000px] w-full mx-auto relative z-10 flex flex-col items-center text-center">
         {/* Profile Avatar */}
@@ -70,14 +70,14 @@ export default function HeroSection() {
         <Reveal delay={420}>
           <div className="mt-7 sm:mt-9 flex flex-col sm:flex-row items-center justify-center gap-3 w-full max-w-xs sm:max-w-none">
             <a
-              href="#links"
+              href="/links"
               className="w-full sm:w-auto px-7 py-3.5 rounded-full border border-black bg-black text-white font-bold text-xs sm:text-sm uppercase tracking-[0.032em] hover:opacity-90 active:scale-95 transition-all flex items-center justify-center gap-2"
             >
               <Link2 className="w-4 h-4" />
               <span>My Links</span>
             </a>
             <a
-              href="#contact"
+              href="/contact"
               className="w-full sm:w-auto px-7 py-3.5 rounded-full border border-black bg-white text-black font-bold text-xs sm:text-sm uppercase tracking-[0.032em] hover:bg-[#e9e9e9] active:scale-95 transition-all flex items-center justify-center gap-2"
             >
               <MessageCircle className="w-4 h-4" />

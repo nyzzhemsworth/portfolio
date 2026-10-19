@@ -5,13 +5,13 @@ import HeroSection from './components/HeroSection';
 import LinksSection from './components/LinksSection';
 import ConnectSection from './components/ConnectSection';
 import Footer from './components/Footer';
+import { navigate, usePathRouting } from './lib/router';
 
 export default function App() {
+  usePathRouting();
+
   const handleContactClick = () => {
-    const el = document.getElementById('contact');
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-    }
+    navigate('/contact');
   };
 
   return (

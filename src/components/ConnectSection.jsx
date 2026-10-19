@@ -37,7 +37,7 @@ export default function ConnectSection({ id = 'contact' }) {
   };
 
   return (
-    <section id={id} className="w-full bg-[#cccccc] py-16 sm:py-24 px-4 sm:px-8 relative overflow-hidden border-t border-black">
+    <section id={id} className="w-full scroll-mt-24 bg-[#cccccc] py-16 sm:py-24 px-4 sm:px-8 relative overflow-hidden border-t border-black">
       <BackgroundDecor />
       <div className="max-w-[1000px] mx-auto relative z-10">
         <Reveal className="flex flex-col items-start justify-between gap-8 mb-10 sm:mb-16">
