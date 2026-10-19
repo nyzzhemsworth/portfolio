@@ -54,20 +54,32 @@ const routes = [
 
 const esc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-/** Ganti isi atribut content pada meta berdasarkan property/name. */
-function setMeta(html, kind, value, newContent) {
+/** Ganti nilai atribut content pada <meta> yg cocok attr (property/name)=value. */
+function setMeta(html, attr, value, newContent) {
   const re = new RegExp(
-    `(\\s+(?:${kind}))\\s*=\\s*"${esc(value)}"\\s+content\\s*=\\s*"[^"]*"`,
+    `(<meta\\s+${attr}\\s*=\\s*"${esc(value)}"[^>]*?content\\s*=\\s*)"[^"]*"`,
     'i',
   );
   if (!re.test(html)) {
-    console.warn(`  [warn] meta ${kind}="${value}" tidak ditemukan`);
+    console.warn(`  [warn] meta ${attr}="${value}" tidak ditemukan`);
     return html;
   }
-  return html.replace(re, (_m, attr) => `${attr}="${newContent}"`);
+  return html.replace(re, (_m, p) => `${p}"${newContent}"`);
 }
 
-/** Ganti isi <title> ... </title> */
+/** Ganti href pada <link rel="?>" ... */
+function setHref(html, rel, newHref) {
+  const re = new RegExp(
+    `(\\srel\\s*=\\s*"${esc(rel)}"[^>]*?href\\s*=\\s*)"[^"]*"`,
+    'i',
+  );
+  if (!re.test(html)) {
+    console.warn(`  [warn] link rel="${rel}" tidak ditemukan`);
+    return html;
+  }
+  return html.replace(re, (_m, p) => `${p}"${newHref}"`);
+}
+
 function setTitle(html, newTitle) {
   return html.replace(/<title>[^<]*<\/title>/i, `<title>${newTitle}</title>`);
 }
@@ -76,7 +88,7 @@ function applyRoute(html, route) {
   let out = html;
   out = setTitle(out, route.title);
   out = setMeta(out, 'name', 'description', route.description);
-  for (const [kind, value, content] of [
+  for (const [attr, value, content] of [
     ['property', 'og:url', `${SITE}${route.path}`],
     ['property', 'og:title', route.title],
     ['property', 'og:description', route.description],
@@ -85,10 +97,10 @@ function applyRoute(html, route) {
     ['name', 'twitter:title', route.title],
     ['name', 'twitter:description', route.description],
     ['name', 'twitter:image', `${SITE}${route.image}`],
-    ['rel', 'canonical', `${SITE}${route.path}`],
   ]) {
-    out = setMeta(out, kind, value, content);
+    out = setMeta(out, attr, value, content);
   }
+  out = setHref(out, 'canonical', `${SITE}${route.path}`);
   return out;
 }
 
