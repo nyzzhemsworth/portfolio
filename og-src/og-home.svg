@@ -22,7 +22,7 @@
   <!-- ============ Avatar card ============ -->
   <rect x="534" y="64" width="132" height="132" rx="34" fill="#ffffff" stroke="#000000" stroke-width="3"/>
   <g clip-path="url(#avclip)">
-    <image href="../public/pswsbhar.jpg" xlink:href="../public/pswsbhar.jpg" x="540" y="70" width="120" height="120" preserveAspectRatio="xMidYMid slice"/>
+    <image href="pswsbhar.jpg" xlink:href="pswsbhar.jpg" x="540" y="70" width="120" height="120" preserveAspectRatio="xMidYMid slice"/>
   </g>
 
   <!-- ============ Name ============ -->
