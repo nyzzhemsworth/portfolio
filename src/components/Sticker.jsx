@@ -3,10 +3,12 @@ import React from 'react';
 const COLOR_MAP = {
   'electric-blue': 'bg-[#4da2ff] text-black',
   'mint-pop': 'bg-[#55db9c] text-black',
-  'lavender': 'bg-[#e9ccff] text-black',
+  // lavender di-point ke biru muda (bukan ungu)
+  'lavender': 'bg-[#dceeff] text-black',
   'ember': 'bg-[#fb4903] text-white',
   'sunburst': 'bg-[#ffd731] text-black',
-  'voltage-violet': 'bg-[#5c4ade] text-white',
+  // voltage-violet di-point ke hitam (bukan ungu)
+  'voltage-violet': 'bg-[#000000] text-white',
   'paper-white': 'bg-[#ffffff] text-black',
   'carbon': 'bg-[#000000] text-white',
 };

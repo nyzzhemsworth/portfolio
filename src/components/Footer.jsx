@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, Mail, Heart, Home, Link2, MessageCircle, Phone } from 'lucide-react';
+import { ArrowUp, Mail, Home, Link2, MessageCircle, Phone } from 'lucide-react';
 import { profile, contact, socialLinks } from '../data/profile';
 import BrandIcon from './BrandIcons';
 
@@ -119,11 +119,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 text-xs text-neutral-500">
+        <div className="flex flex-col items-center justify-between gap-3 pt-6 text-xs text-neutral-500">
           <span>© {YEAR} {profile.name} — {profile.handle}. All rights reserved.</span>
-          <span className="inline-flex items-center gap-1.5">
-            Crafted with <Heart className="w-3.5 h-3.5 fill-[#fb4903] text-[#fb4903]" /> {profile.headline}
-          </span>
         </div>
       </div>
     </footer>

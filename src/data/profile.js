@@ -43,14 +43,14 @@ export const channelLinks = [
     sub: 'Hang out, chat & community',
     url: 'https://discord.gg/ZvDzp3ebTd',
     brand: 'discord',
-    color: 'voltage-violet',
+    color: 'carbon',
   },
 ];
 
 // ---- SOSIAL MEDIA (kartu kecil) -----------------------------
 export const socialLinks = [
   { id: 'tiktok', label: 'TikTok', url: 'https://tiktok.com/@t4rake', brand: 'tiktok', color: 'carbon' },
-  { id: 'instagram', label: 'Instagram', url: 'https://instagram.com/ackles.amv', brand: 'instagram', color: 'lavender' },
+  { id: 'instagram', label: 'Instagram', url: 'https://instagram.com/ackles.amv', brand: 'instagram', color: 'electric-blue' },
   { id: 'github', label: 'GitHub', url: 'https://github.com/nyzzhemsworth', brand: 'github', color: 'paper-white' },
 ];
 

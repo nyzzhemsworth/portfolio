@@ -58,7 +58,7 @@ export default function HeroSection() {
         <Reveal delay={350}>
           <div className="mt-5 sm:mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
             {profile.roles.map((role, i) => {
-              const colors = ['electric-blue', 'mint-pop', 'lavender', 'sunburst'];
+              const colors = ['electric-blue', 'mint-pop', 'ember', 'sunburst'];
               return (
                 <Sticker key={i} color={colors[i % colors.length]} rotate={0} label={role} />
               );

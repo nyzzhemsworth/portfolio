@@ -31,7 +31,7 @@ export default function ConnectSection({ id = 'contact' }) {
       particleCount: 60,
       spread: 65,
       origin: { y: 0.8 },
-      colors: ['#4da2ff', '#55db9c', '#e9ccff', '#fb4903', '#ffd731', '#5c4ade'],
+      colors: ['#4da2ff', '#55db9c', '#ffd731', '#fb4903', '#2b7de0'],
     });
     setTimeout(() => setCopied(false), 2500);
   };
@@ -44,7 +44,7 @@ export default function ConnectSection({ id = 'contact' }) {
           <div className="max-w-2xl">
             <div className="flex flex-wrap items-center gap-2 mb-3 sm:mb-4">
               <Sticker color="mint-pop" rotate={-3} label="CONTACT PERSON" />
-              <Sticker color="lavender" rotate={2} label="FAST REPLY" />
+              <Sticker color="sunburst" rotate={2} label="FAST REPLY" />
             </div>
             <h2 className="font-extrabold text-3xl sm:text-6xl md:text-7xl leading-[0.85] tracking-tight uppercase font-['Syne',sans-serif] text-black m-0">
               LET'S CONNECT

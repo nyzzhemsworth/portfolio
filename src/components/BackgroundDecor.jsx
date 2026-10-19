@@ -10,7 +10,7 @@ export default function BackgroundDecor({ className = '' }) {
     >
       {/* Blur blobs (warna brand) */}
       <div className="absolute -top-28 -left-24 w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-[#4da2ff]/30 blur-3xl" />
-      <div className="absolute top-6 -right-24 w-72 h-72 sm:w-[28rem] sm:h-[28rem] rounded-full bg-[#e9ccff]/45 blur-3xl" />
+      <div className="absolute top-6 -right-24 w-72 h-72 sm:w-[28rem] sm:h-[28rem] rounded-full bg-[#dceeff]/70 blur-3xl" />
       <div className="absolute -bottom-24 left-1/3 w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-[#55db9c]/25 blur-3xl" />
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-52 h-52 sm:w-64 sm:h-64 rounded-full bg-[#ffd731]/25 blur-3xl" />
 
