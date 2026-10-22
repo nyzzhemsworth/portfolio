@@ -13,7 +13,7 @@ function ChannelCard({ link, rotate = -2 }) {
       href={link.url}
       target="_blank"
       rel="noreferrer"
-      className="group rounded-[24px] sm:rounded-[28px] border border-black bg-white p-6 sm:p-8 flex flex-col min-h-[200px] justify-between transition-all hover:-translate-y-1 hover:shadow-[6px_6px_0_0_#000] cursor-pointer"
+      className="group rounded-[24px] sm:rounded-[28px] border border-black bg-white p-6 sm:p-8 flex flex-col h-full min-h-[200px] justify-between transition-all hover:-translate-y-1 hover:shadow-[6px_6px_0_0_#000] cursor-pointer"
     >
       <div className="flex items-start justify-between">
         <Sticker color={link.color} rotate={rotate} icon={<BrandIcon name={link.brand} className="w-3.5 h-3.5" />} label={link.label} />
