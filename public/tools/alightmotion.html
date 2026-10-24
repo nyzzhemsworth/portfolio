@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alight Motion Premium — aktivasi paket annual langsung dari web. Login, verifikasi link, atau auto akun otomatis." />
+    <title>ZIELL — Alight Motion Premium</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ZIELL" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:url" content="https://ziellvfx.com/tools/alightmotion" />
+    <meta property="og:title" content="ZIELL — Alight Motion Premium" />
+    <meta property="og:description" content="Aktifkan Alight Motion Premium annual langsung dari web. Login, verifikasi link, atau auto akun otomatis." />
+    <meta property="og:image" content="https://ziellvfx.com/og-home.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ZIELL — Alight Motion Premium" />
+    <meta name="twitter:description" content="Aktifkan Alight Motion Premium annual langsung dari web." />
+    <meta name="twitter:image" content="https://ziellvfx.com/og-home.png" />
+
+    <link rel="canonical" href="https://ziellvfx.com/tools/alightmotion" />
+    <meta name="theme-color" content="#dceeff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/index-DlZ633yg.css">
+
+    <style>
+      :root{
+        --sky:#dceeff; --carbon:#000; --paper:#fff;
+        --sunburst:#ffd731; --mint:#55db9c; --electric:#4da2ff;
+        --ember:#fb4903; --mist:#e9e9e9; --gray:#ccc;
+      }
+      *{box-sizing:border-box;margin:0;padding:0}
+      body{
+        background:var(--sky); color:var(--carbon);
+        font-family:"Plus Jakarta Sans",system-ui,sans-serif;
+        overflow-x:hidden; line-height:1.5;
+        -webkit-font-smoothing:antialiased;
+      }
+      a{color:inherit;text-decoration:none}
+
+      /* top black marquee */
+      .marquee{background:var(--carbon);color:var(--paper);overflow:hidden;white-space:nowrap}
+      .marquee-track{display:inline-block;padding:10px 0;animation:scroll 25s linear infinite}
+      .marquee-track span{
+        font-weight:800;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;padding:0 14px;
+      }
+      .marquee-track .dot{color:var(--sunburst)}
+      @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+      .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+      .hero{position:relative;text-align:center;padding:64px 8px 44px}
+      .hero .badge{
+        display:inline-block;background:var(--paper);border:2px solid var(--carbon);
+        border-radius:999px;padding:8px 20px;font-weight:800;font-size:.8rem;
+        letter-spacing:.18em;text-transform:uppercase;margin-bottom:20px;
+      }
+      .hero h1{
+        font-family:"Anton",sans-serif;font-size:clamp(2.6rem,8vw,5.4rem);
+        line-height:.95;text-transform:uppercase;
+      }
+      .hero .sub{max-width:580px;margin:18px auto 26px;font-weight:500;font-size:1rem;color:#111}
+      .pills{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:30px}
+      .pill{
+        display:inline-flex;align-items:center;border:2px solid var(--carbon);
+        border-radius:999px;padding:10px 20px;font-weight:800;font-size:.8rem;
+        letter-spacing:.08em;text-transform:uppercase;background:var(--paper);
+        box-shadow:0 6px 14px rgba(0,0,0,.12);
+      }
+      .pill.blue{background:var(--electric)}
+      .pill.mint{background:var(--mint)}
+      .pill.ember{background:var(--ember);color:var(--paper)}
+      .pill.yellow{background:var(--sunburst)}
+
+      .btn{
+        display:inline-flex;align-items:center;justify-content:center;gap:8px;
+        border-radius:999px;font-weight:800;font-size:.95rem;padding:14px 26px;
+        cursor:pointer;border:2px solid var(--carbon);transition:transform .15s,background .2s,box-shadow .2s;
+      }
+      .btn:hover:not(:disabled){transform:translateY(-2px)}
+      .btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+      .btn.black{background:var(--carbon);color:var(--paper)}
+      .btn.white{background:var(--paper)}
+      .btn.yellow{background:var(--sunburst)}
+      .btn.yellow:hover:not(:disabled){background:#ffdf66}
+      .snip{margin-top:14px}
+      a.btn{display:inline-flex}
+
+      /* twinkles */
+      .twinkle{position:absolute;font-size:26px;animation:tw 2.6s ease-in-out infinite}
+      @keyframes tw{0%,100%{transform:scale(1) rotate(0);opacity:1}50%{transform:scale(1.35) rotate(18deg);opacity:.75}}
+      .hero .t1{top:36px;left:8%;transform:rotate(-8deg)}
+      .hero .t2{top:70px;right:10%;transform:rotate(10deg)}
+
+      section{position:relative}
+      .sec-title{font-family:"Anton",sans-serif;text-transform:uppercase;font-size:clamp(1.5rem,4vw,2.2rem);margin-bottom:8px}
+      .sec-sub{color:#222;font-weight:500;font-size:.95rem;margin-bottom:22px}
+      .tools{padding:40px 0 30px}
+
+      .panel{
+        background:var(--paper);border:2px solid var(--carbon);border-radius:24px;
+        box-shadow:0 14px 30px rgba(0,0,0,.10);overflow:hidden;
+      }
+      .tabs{display:flex;gap:10px;padding:16px 22px;border-bottom:2px solid var(--carbon);overflow-x:auto;background:var(--mist)}
+      .tab{
+        flex-shrink:0;border:2px solid var(--carbon);border-radius:999px;padding:9px 18px;
+        background:var(--paper);font-weight:800;font-size:.8rem;letter-spacing:.06em;
+        text-transform:uppercase;cursor:pointer;transition:all .18s;
+      }
+      .tab.active{background:var(--sunburst)}
+      .tab:not(.active):hover{background:var(--mist)}
+      .tabbody{display:none;padding:26px}
+      .tabbody.active{display:block;animation:fade .3s ease}
+      @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+      /* kuota harian */
+      .quota{
+        display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:16px;
+        border:2px solid var(--carbon);border-radius:999px;background:var(--paper);
+        padding:9px 18px;font-weight:800;font-size:.8rem;letter-spacing:.03em;
+      }
+      .quota .bar{width:72px;height:10px;border:2px solid var(--carbon);border-radius:999px;overflow:hidden;background:var(--mist)}
+      .quota .bar i{display:block;height:100%;width:100%;background:var(--mint);transition:width .3s}
+      .quota.warn .bar i{background:var(--sunburst)}
+      .quota.habis{background:#ffdcd3}
+      .quota.habis .bar i{background:var(--ember)}
+      .quota .mini{font-size:.72rem;font-weight:700;color:#444}
+
+      .field{display:flex;flex-direction:column;gap:6px;max-width:560px}
+      .field + .field{margin-top:12px}
+      .field label{font-weight:800;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+      .field .hint{font-size:.78rem;font-weight:500;color:#555;text-transform:none;letter-spacing:0}
+      .field input,.field textarea{
+        padding:13px 16px;border:2px solid var(--carbon);border-radius:14px;
+        background:var(--sky);font-size:.95rem;font-family:inherit;color:var(--carbon);
+        width:100%;
+      }
+      .field textarea{min-height:88px;resize:vertical}
+      .field input:focus,.field textarea:focus{
+        outline:none;background:var(--paper);box-shadow:4px 4px 0 var(--sunburst);
+      }
+      .row{margin-top:16px}
+
+      .sticker-cmd{
+        display:inline-block;border:2px solid var(--carbon);border-radius:10px;
+        background:var(--mist);padding:6px 12px;font-weight:800;font-size:.82rem;margin:4px 6px 4px 0;
+      }
+      .sticker-cmd em{font-style:normal;color:var(--ember)}
+
+      .note{
+        display:flex;gap:10px;align-items:flex-start;border:2px solid var(--carbon);
+        border-radius:14px;padding:12px 16px;font-size:.85rem;font-weight:500;margin-top:16px;
+        max-width:640px;
+      }
+      .note.warn{background:#fff8d9}
+      .note.ok{background:#e2fcee}
+      .note.info{background:var(--sky)}
+      .note.err{background:#ffdcd3}
+
+      /* result / activity */
+      .result{margin-top:18px;display:none}
+      .result.show{display:block;animation:fade .3s ease}
+      .result pre{
+        background:#0a0a0a;color:#d8fbc9;border-radius:12px;padding:16px;overflow:auto;
+        font-size:.82rem;line-height:1.55;border:2px solid var(--carbon);max-height:340px;
+      }
+      .loader{
+        display:inline-block;width:18px;height:18px;border-radius:999px;
+        border:3px solid rgba(0,0,0,.15);border-top-color:var(--carbon);
+        vertical-align:-4px;margin-right:8px;animation:spin .8s linear infinite;
+      }
+      @keyframes spin{to{transform:rotate(360deg)}}
+      .mini{font-size:.8rem;font-weight:700;color:#333}
+
+      /* steps */
+      .steps-sec{padding:50px 0 30px}
+      .step{
+        display:flex;gap:16px;align-items:flex-start;background:var(--paper);
+        border:2px solid var(--carbon);border-radius:20px;padding:18px 20px;
+        box-shadow:8px 8px 0 rgba(0,0,0,.08);margin-bottom:14px;max-width:780px;
+      }
+      .step .n{
+        font-family:"Anton",sans-serif;font-size:1.05rem;width:40px;height:40px;
+        display:grid;place-items:center;background:var(--carbon);color:var(--sunburst);
+        border-radius:999px;flex-shrink:0;
+      }
+      .step p{font-weight:500;font-size:.95rem}
+
+      footer{margin-top:50px}
+      .foot-band{background:var(--carbon);color:var(--paper);padding:34px 20px;text-align:center}
+      .foot-pill{
+        display:inline-block;border:2px solid var(--paper);border-radius:999px;
+        padding:12px 34px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px;
+      }
+      .foot-links{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;font-weight:700;font-size:.85rem}
+      .foot-links a:hover{color:var(--sunburst)}
+      .foot-note{margin-top:14px;font-size:.78rem;opacity:.7}
+
+      /* glow blob (Re di landing) */
+      html{scroll-behavior:smooth}
+      .glow{position:absolute;inset:0;overflow:hidden;z-index:0;pointer-events:none;user-select:none}
+      .glow i{position:absolute;display:block;border-radius:9999px;filter:blur(64px)}
+      .glow .b1{top:-7rem;left:-6rem;width:18rem;height:18rem;background:rgba(77,162,255,.30)}
+      .glow .b2{top:1.5rem;right:-6rem;width:18rem;height:18rem;background:rgba(220,238,255,.72)}
+      .glow .b3{bottom:-6rem;left:33%;width:16rem;height:16rem;background:rgba(85,219,156,.25)}
+      .glow .b4{top:50%;left:0;width:13rem;height:13rem;background:rgba(255,215,49,.25);transform:translateY(-50%)}
+      .hero .wrap,.tools .wrap,.steps-sec .wrap{position:relative;z-index:1}
+      .pill.sticker-hover{cursor:pointer}
+
+      @media (min-width:640px){
+        .glow .b2{width:28rem;height:28rem}
+        .glow .b3{width:20rem;height:20rem}
+        .glow .b4{width:16rem;height:16rem}
+      }
+
+      @media (max-width:640px){
+        .twinkle{display:none}
+        .tabbody{padding:18px}
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>ZIELL</span><span class="dot">•</span>
+        <span>@T4RAKE</span><span class="dot">•</span>
+        <span>ALIGHT MOTION PREMIUM</span><span class="dot">•</span>
+        <span>AKTIVASI ANNUAL</span><span class="dot">•</span>
+        <span>VIDEO EDITING</span><span class="dot">•</span>
+        <span>WEB DEV</span><span class="dot">•</span>
+        <span>BOT &amp; AUTOMATION</span><span class="dot">•</span>
+        <span>OPEN FOR COLLAB</span><span class="dot">•</span>
+        <span>ZIELL</span><span class="dot">•</span>
+        <span>@T4RAKE</span><span class="dot">•</span>
+        <span>ALIGHT MOTION PREMIUM</span><span class="dot">•</span>
+        <span>AKTIVASI ANNUAL</span><span class="dot">•</span>
+        <span>VIDEO EDITING</span><span class="dot">•</span>
+        <span>WEB DEV</span><span class="dot">•</span>
+        <span>BOT &amp; AUTOMATION</span><span class="dot">•</span>
+        <span>OPEN FOR COLLAB</span><span class="dot">•</span>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="glow" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i></div>
+      <span class="twinkle t1">✦</span><span class="twinkle t2">✦</span>
+
+      <div class="wrap">
+        <div class="reveal" data-delay="0" style="margin-bottom:20px"><div class="badge animate-float-soft">TOOL • ALIGHT MOTION</div></div>
+        <h1 class="reveal" data-delay="90">Alight Motion<br>Premium</h1>
+        <p class="sub reveal" data-delay="180">Aktifkan paket <b>annual</b> langsung di sini — kirim email, verifikasi link, done.
+        Ada juga mode <b>auto</b> buat bikin akun instan.</p>
+
+        <div class="pills reveal" data-delay="270">
+          <span class="pill blue sticker-hover">Login via Email</span>
+          <span class="pill mint sticker-hover">Verifikasi Link</span>
+          <span class="pill ember sticker-hover">Akun Otomatis</span>
+        </div>
+
+        <div style="margin-top:30px" class="reveal" data-delay="360">
+          <a class="btn black" href="#tools">Mulai Proses ↓</a>
+          <a class="btn white" href="#cara">Cara Pakai</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOOL PANEL -->
+    <section class="tools" id="tools">
+      <div class="wrap">
+        <h2 class="sec-title reveal" data-delay="0">Tool Panel</h2>
+        <p class="sec-sub reveal" data-delay="80">Proses langsung dari web — tanpa bot. Maksimal <b>2 proses / IP / hari</b>, reset jam 00:00 WIB.</p>
+
+        <div class="quota reveal" id="quota" data-delay="140"><span class="mini">Memeriksa kuota…</span></div>
+
+        <div class="panel reveal" data-delay="220">
+          <div class="tabs" role="tablist">
+            <button class="tab active" onclick="openTab(event,'v-login')">Login</button>
+            <button class="tab" onclick="openTab(event,'v-verify')">Verify</button>
+            <button class="tab" onclick="openTab(event,'v-auto')">Auto</button>
+            <button class="tab" onclick="openTab(event,'v-status')">Status</button>
+          </div>
+
+          <!-- LOGIN -->
+          <div class="tabbody active" id="v-login">
+            <div style="margin-bottom:12px"><span class="sticker-cmd"><em>Step 1</em> — Kirim email</span></div>
+            <p style="font-weight:500;font-size:.92rem;margin-bottom:18px">
+              Masukkan email yang mau diaktivasi. Sistem akan mengirim <b>link login</b> ke email tersebut.
+              Cek <b>inbox/spam</b>, lalu copy link-nya.
+            </p>
+            <div class="field">
+              <label>Email</label>
+              <input type="email" id="in-mail" placeholder="nama@gmail.com" autocomplete="email">
+            </div>
+            <div class="row">
+              <button class="btn yellow" id="btn-send" onclick="doSend()">Kirim Link Login</button>
+            </div>
+            <div class="result" id="res-send"></div>
+          </div>
+
+          <!-- VERIFY -->
+          <div class="tabbody" id="v-verify">
+            <div style="margin-bottom:12px"><span class="sticker-cmd"><em>Step 2</em> — Verifikasi &amp; klaim</span></div>
+            <p style="font-weight:500;font-size:.92rem;margin-bottom:18px">
+              Buka email tadi, salin <b>link login</b> dari Alight Motion, paste di bawah.
+              Sistem langsung verifikasi + aktifkan premium.
+            </p>
+            <div class="field">
+              <label>Email <span class="hint">email yang sama di step 1</span></label>
+              <input type="email" id="in-verify-mail" placeholder="nama@gmail.com">
+            </div>
+            <div class="field">
+              <label>Link Verifikasi</label>
+              <textarea id="in-link" placeholder="https://alight-creative.firebaseapp.com/__/auth/links?link=..."></textarea>
+            </div>
+            <div class="row">
+              <button class="btn yellow" id="btn-verify" onclick="doVerify()">Verifikasi &amp; Aktifkan</button>
+            </div>
+            <div class="result" id="res-verify"></div>
+          </div>
+
+          <!-- AUTO -->
+          <div class="tabbody" id="v-auto">
+            <div style="margin-bottom:12px"><span class="sticker-cmd">Full otomatis — bikin 1 akun</span></div>
+            <p style="font-weight:500;font-size:.92rem;margin-bottom:18px">
+              Sistem bikin email sementara, kirim link, polling inbox, verifikasi, dan klaim premium —
+              kamu tinggal tunggu hasilnya (30–90 detik).
+            </p>
+            <button class="btn yellow" id="btn-auto" onclick="doAuto()">Bikin 1 Akun Otomatis</button>
+            <div class="result" id="res-auto"></div>
+          </div>
+
+          <!-- STATUS -->
+          <div class="tabbody" id="v-status">
+            <div style="margin-bottom:12px">
+              <span class="sticker-cmd">Riwayat akun di browser ini</span>
+            </div>
+            <p style="font-weight:500;font-size:.92rem;margin-bottom:18px">
+              Akun yang kamu buat lewat halaman ini (auto / verify) tersimpan di browser kamu —
+              tombol “Hapus” buat bersihkan.
+            </p>
+            <button class="btn white" onclick="renderHistory()">Refresh</button>
+            <button class="btn black" onclick="clearHistory()">Hapus Riwayat</button>
+            <div class="result show" id="res-status" style="margin-top:18px"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="steps-sec" id="cara">
+      <div class="wrap">
+        <h2 class="sec-title reveal" data-delay="0">Cara Pakai (Manual)</h2>
+        <p class="sec-sub reveal" data-delay="80">3 langkah, pakai tab <b>Login</b> dan <b>Verify</b>.</p>
+        <div class="step reveal" data-delay="120"><div class="n">1</div>
+          <p>Buka tab <b>Login</b>, masukkan email → link login terkirim ke inbox.</p></div>
+        <div class="step reveal" data-delay="240"><div class="n">2</div>
+          <p>Cek <b>email</b> (termasuk spam), salin <b>link login</b> dari Alight Motion.</p></div>
+        <div class="step reveal" data-delay="360"><div class="n">3</div>
+          <p>Buka tab <b>Verify</b>, paste link-nya → <b>premium aktif</b> sampai tahun depan.</p></div>
+        <div class="note warn reveal" data-delay="460" style="margin-top:22px">
+          <div><b>Kuota:</b> 1 proses = 1 pemakaian. Maksimal <b>2x per IP per hari</b>, reset otomatis jam <b>00:00 WIB</b>. Kalau kuotamu habis, coba lagi besok.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot-band">
+        <div class="foot-pill">ziellvfx.com</div>
+        <div class="foot-links">
+          <a href="/">Home</a>
+          <a href="/links">Links</a>
+          <a href="/contact">Contact</a>
+          <a href="/tools">Tools</a>
+          <a href="/tools/alightmotion">AM Premium</a>
+        </div>
+        <div class="foot-note">© <span id="yr"></span> ZIELL — Multi-disciplinary Creator</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('yr').textContent = new Date().getFullYear();
+
+      /* ---------- scroll reveal (kaya landing) ---------- */
+      (function () {
+        const els = document.querySelectorAll('.reveal');
+        if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          els.forEach(el => el.classList.add('is-in'));
+          return;
+        }
+        const io = new IntersectionObserver(entries => {
+          for (const en of entries) {
+            if (!en.isIntersecting) continue;
+            const el = en.target;
+            const d = Number(el.dataset.delay || 0);
+            if (d) el.style.transitionDelay = d + 'ms';
+            el.classList.add('is-in');
+            if (d) setTimeout(() => { el.style.transitionDelay = '0ms'; }, d + 800);
+            io.unobserve(el);
+          }
+        }, { threshold: .12, rootMargin: '0px 0px -60px 0px' });
+        els.forEach(el => io.observe(el));
+      })();
+
+      /* ---------- helpers ---------- */
+      const API = '/api/am';
+      const $ = (s) => document.querySelector(s);
+      const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+      function showRes(id, html){
+        const el = document.getElementById(id);
+        el.innerHTML = html;
+        el.classList.add('show');
+      }
+      function preBlock(obj){
+        return '<pre>' + JSON.stringify(obj, null, 2)
+          .replace(/&/g,'&amp;').replace(/</g,'&lt;') + '</pre>';
+      }
+      function resultCard(o){
+        const ok = o.ok === true;
+        return '<div class="note ' + (ok ? 'ok' : 'err') + '"><div>' +
+          (ok ? '✅ ' : '❌ ') + (o.summary || o.message || o.error || '') + '</div></div>' +
+          '<div class="note info" style="margin-top:10px"><div><b>Detail:</b><br><span style="word-break:break-all">' +
+          Object.entries(o).filter(([k]) => !['ok','summary'].includes(k)).map(([k,v]) => '<b>' + k + '</b>: ' + String(v)).join('<br>') +
+          '</span></div></div>';
+      }
+      async function api(path, body){
+        const r = await fetch(API + path, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body || {}),
+        });
+        const data = await r.json().catch(() => ({ ok:false, error:'Response tidak valid' }));
+        updateLimit();
+        if (r.status === 429 && data.limit){
+          quotaOK = false;
+          renderQuota(data.limit);
+        }
+        return { status: r.status, data };
+      }
+      function busy(btnId, on, text){
+        const b = document.getElementById(btnId);
+        if (on){
+          b.classList.add('busying');
+          b.dataset.label = b.textContent;
+          b.disabled = true;
+          if (text) b.innerHTML = '<span class="loader"></span>' + text;
+        } else {
+          b.classList.remove('busying');
+          b.disabled = !quotaOK; // tetap disabled kalau kuota habis
+          b.innerHTML = b.dataset.label || b.textContent;
+        }
+      }
+
+      /* ---------- kuota harian ---------- */
+      let quotaOK = true;
+      function fmtDur(ms){
+        const t = Math.max(0, Number(ms) || 0);
+        const h = Math.floor(t / 3600000);
+        const m = Math.ceil((t % 3600000) / 60000) % 60;
+        return h > 0 ? h + ' jam ' + m + ' menit' : m + ' menit';
+      }
+      function renderQuota(l){
+        const el = document.getElementById('quota');
+        if (!el) return;
+        const left = l.left, lim = l.limit;
+        const habis = left <= 0;
+        el.classList.toggle('habis', habis);
+        el.classList.toggle('warn', !habis && left === 1);
+        el.innerHTML =
+          '<span>⚠️ Kuota habis!</span><span class="bar"><i style="width:0%"></i></span>' +
+          '<span class="mini">reset 00:00 WIB (±' + fmtDur(l.resetInMs) + ' lagi)</span>';
+        el.innerHTML = habis
+          ? '<span>🚫 Kuota harian habis (' + l.used + '/' + lim + ')</span>' +
+            '<span class="mini">• reset 00:00 WIB (±' + fmtDur(l.resetInMs) + ' lagi)</span>'
+          : '<span>✨ Sisa kuota: <b>' + left + '/' + lim + '</b></span>' +
+            '<span class="bar"><i style="width:' + Math.round((left/lim)*100) + '%"></i></span>' +
+            '<span class="mini">• reset 00:00 WIB (±' + fmtDur(l.resetInMs) + ' lagi)</span>';
+        ['btn-send','btn-verify','btn-auto'].forEach(id => {
+          const b = document.getElementById(id);
+          if (b && !b.classList.contains('busying')) b.disabled = habis;
+        });
+      }
+      async function updateLimit(){
+        try{
+          const r = await fetch(API + '/limit');
+          const d = await r.json();
+          if (d && typeof d.used === 'number'){
+            quotaOK = d.used < d.limit;
+            renderQuota(d);
+          }
+        }catch(e){}
+      }
+
+      /* ---------- actions ---------- */
+      async function doSend(){
+        const email = $('#in-mail').value.trim().toLowerCase();
+        if (!EMAIL_RE.test(email)){
+          showRes('res-send', '<div class="note err">❌ Format email tidak valid</div>');
+          return;
+        }
+        localStorage.setItem('am:lastEmail', email);
+        $('#in-verify-mail').value = email;
+        busy('btn-send', true, 'Mengirim link…');
+        showRes('res-send', '<span class="loader"></span><b>Tunggu 5–20 detik…</b>');
+        try{
+          const { data } = await api('/send', { email });
+          if (data.ok){
+            showRes('res-send',
+              '<div class="note ok"><div>✅ Link login terkirim ke <b>' + email + '</b> — cek inbox/spam, lalu copy link-nya.</div></div>' +
+              '<div class="note info" style="margin-top:10px"><div>➡️ Lanjut ke tab <b>Verify</b>, paste link yang dikirim Alight Motion.</div></div>');
+          } else {
+            showRes('res-send', resultCard(data));
+          }
+        } catch(e){
+          showRes('res-send', resultCard({ ok:false, error: 'Koneksi ke server gagal: ' + e.message }));
+        }
+        busy('btn-send', false);
+      }
+
+      async function doVerify(){
+        const email = $('#in-verify-mail').value.trim().toLowerCase();
+        const link = $('#in-link').value.trim();
+        if (!EMAIL_RE.test(email)){
+          showRes('res-verify', '<div class="note err">❌ Email tidak valid</div>'); return;
+        }
+        if (!/oobCode=|alight|firebaseapp/i.test(link)){
+          showRes('res-verify', '<div class="note err">❌ Itu bukan link verifikasi yang valid</div>'); return;
+        }
+        busy('btn-verify', true, 'Memverifikasi…');
+        showRes('res-verify', '<span class="loader"></span><b>Verifikasi & klaim premium…</b>');
+        try{
+          const { data } = await api('/verify', { email, link });
+          if (data.ok){
+            showRes('res-verify',
+              '<div class="note ok"><div>🎉 Premium <b>AKTIF</b> untuk <b>' + email + '</b>' +
+              (data.expiryText ? ' — berlaku sampai <b>' + data.expiryText + '</b>' : '') + '</div></div>' +
+              preBlock({ order: data.order, uid: data.uid, expiry: data.expiryText }));
+            addHistory({
+              source: 'verify', email, uid: data.uid, order: data.order,
+              expiry: data.expiry, expiryText: data.expiryText, at: Date.now()
+            });
+          } else {
+            showRes('res-verify', resultCard(data));
+          }
+        } catch(e){
+          showRes('res-verify', resultCard({ ok:false, error:'Koneksi ke server gagal: ' + e.message }));
+        }
+        busy('btn-verify', false);
+      }
+
+      async function doAuto(){
+        busy('btn-auto', true, 'Membikin akun… (30–90 detik)');
+        showRes('res-auto','<span class="loader"></span><b>Proses berjalan… email temp → link → verifikasi → klaim</b>');
+        try{
+          const { data } = await api('/auto');
+          if (data.ok){
+            showRes('res-auto',
+              '<div class="note ok"><div>🎉 1 akun siap pakai!</div></div>' +
+              preBlock({ email: data.email, password: data.password, order: data.order, aktif_sampai: data.expiryText, uid: data.uid }));
+            addHistory({ source:'auto', email:data.email, password:data.password, uid:data.uid,
+                         order:data.order, expiry:data.expiry, expiryText:data.expiryText, at:Date.now() });
+          } else {
+            showRes('res-auto', resultCard(data));
+          }
+        } catch(e){
+          showRes('res-auto', resultCard({ ok:false, error:'Koneksi ke server gagal: ' + e.message }));
+        }
+        busy('btn-auto', false);
+      }
+
+      /* ---------- history (localStorage) ---------- */
+      const HKEY = 'am:accounts';
+      function getHistory(){ try{ return JSON.parse(localStorage.getItem(HKEY) || '[]').filter(a => a.source !== 'bulk'); }catch{ return []; } }
+      function addHistory(entry){
+        const list = getHistory().filter(a => a.source !== 'bulk');
+        list.push(entry);
+        localStorage.setItem(HKEY, JSON.stringify(list.slice(-60)));
+      }
+      function clearHistory(){ localStorage.removeItem(HKEY); renderHistory(); }
+      function renderHistory(){
+        const list = getHistory().slice().reverse();
+        if (!list.length){
+          showRes('res-status','<div class="note info">📭 Belum ada akun yang dibuat di browser ini. Coba tab <b>Auto</b>.</div>');
+          return;
+        }
+        const rows = list.map((a,i) =>
+          '<div class="step" style="margin-bottom:10px"><div class="n">' + (list.length-i) + '</div>' +
+          '<p><b>' + (a.email || '-') + '</b>' +
+          (a.password ? ' • pass <b>' + a.password + '</b>' : '') +
+          (a.expiryText ? ' • aktif s.d. <b>' + a.expiryText + '</b>' : '') +
+          ' <span class="mini">[' + a.source + ']</span></p></div>').join('');
+        showRes('res-status', rows);
+      }
+
+      /* ---------- tabs ---------- */
+      function openTab(e, id){
+        document.querySelectorAll('.tabbody').forEach(p=>p.classList.remove('active'));
+        document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+        e.currentTarget.classList.add('active');
+        if (id === 'v-status') renderHistory();
+      }
+      // isi email yg terakhir dipakai (biar verify langsung nyambung)
+      const lastEmail = localStorage.getItem('am:lastEmail');
+      if (lastEmail){ $('#in-mail').value = lastEmail; $('#in-verify-mail').value = lastEmail; }
+
+      updateLimit();
+    </script>
+  </body>
+</html>

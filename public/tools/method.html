@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Compress Method — pilih video → pilih method → Start processing. Patch metadata MP4 ala CompressBase, video 100% tetap di device. 6 patch/hari per device, gratis." />
+    <title>ZIELL — Compress Method</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ZIELL" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:url" content="https://ziellvfx.com/tools/method" />
+    <meta property="og:title" content="ZIELL — Compress Method" />
+    <meta property="og:description" content="Pilih video → pilih method → Start processing. Patch metadata MP4 ala CompressBase, video 100% tetap di device. Gratis." />
+    <meta property="og:image" content="https://ziellvfx.com/og-home.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ZIELL — Compress Method" />
+    <meta name="twitter:description" content="Patch metadata MP4 ala CompressBase. Video 100% tetap di device-mu." />
+    <meta name="twitter:image" content="https://ziellvfx.com/og-home.png" />
+
+    <link rel="canonical" href="https://ziellvfx.com/tools/method" />
+    <meta name="theme-color" content="#dceeff" />
+
+    <!-- jangan kunci halaman di cache supaya update selalu dapat versi terbaru -->
+    <meta http-equiv="Cache-Control" content="no-store" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://compressbase.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/index-DlZ633yg.css">
+
+    <style>
+      :root{
+        --sky:#dceeff; --carbon:#000; --paper:#fff;
+        --sunburst:#ffd731; --mint:#55db9c; --electric:#4da2ff;
+        --ember:#fb4903; --mist:#e9e9e9; --gray:#ccc;
+      }
+      *{box-sizing:border-box;margin:0;padding:0}
+      body{
+        background:var(--sky); color:var(--carbon);
+        font-family:"Plus Jakarta Sans",system-ui,sans-serif;
+        overflow-x:hidden; line-height:1.5;
+        -webkit-font-smoothing:antialiased;
+      }
+      a{color:inherit;text-decoration:none}
+
+      /* top black marquee */
+      .marquee{background:var(--carbon);color:var(--paper);overflow:hidden;white-space:nowrap}
+      .marquee-track{display:inline-block;padding:10px 0;animation:scroll 25s linear infinite}
+      .marquee-track span{
+        font-weight:800;font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;padding:0 14px;
+      }
+      .marquee-track .dot{color:var(--sunburst)}
+      @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+      .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+      .hero{position:relative;text-align:center;padding:64px 8px 44px}
+      .hero .badge{
+        display:inline-block;background:var(--paper);border:2px solid var(--carbon);
+        border-radius:999px;padding:8px 20px;font-weight:800;font-size:.8rem;
+        letter-spacing:.18em;text-transform:uppercase;margin-bottom:20px;
+      }
+      .hero h1{
+        font-family:"Anton",sans-serif;font-size:clamp(2.6rem,8vw,5.4rem);
+        line-height:.95;text-transform:uppercase;
+      }
+      .hero .sub{max-width:600px;margin:18px auto 26px;font-weight:500;font-size:1rem;color:#111}
+      .pills{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:30px}
+      .pill{
+        display:inline-flex;align-items:center;border:2px solid var(--carbon);
+        border-radius:999px;padding:10px 20px;font-weight:800;font-size:.8rem;
+        letter-spacing:.08em;text-transform:uppercase;background:var(--paper);
+        box-shadow:0 6px 14px rgba(0,0,0,.12);
+      }
+      .pill.blue{background:var(--electric)}
+      .pill.mint{background:var(--mint)}
+      .pill.yellow{background:var(--sunburst)}
+
+      .btn{
+        display:inline-flex;align-items:center;justify-content:center;gap:8px;
+        border-radius:999px;font-weight:800;font-size:.95rem;padding:14px 26px;
+        cursor:pointer;border:2px solid var(--carbon);transition:transform .15s,background .2s;
+      }
+      .btn:hover:not(:disabled){transform:translateY(-2px)}
+      .btn:disabled{opacity:.45;cursor:not-allowed;transform:none}
+      .btn.black{background:var(--carbon);color:var(--paper)}
+      .btn.white{background:var(--paper)}
+      .btn.yellow{background:var(--sunburst)}
+      .btn.yellow:hover:not(:disabled){background:#ffdf66}
+      a.btn{display:inline-flex}
+
+      .twinkle{position:absolute;font-size:26px;animation:tw 2.6s ease-in-out infinite}
+      @keyframes tw{0%,100%{transform:scale(1) rotate(0);opacity:1}50%{transform:scale(1.35) rotate(18deg);opacity:.75}}
+      .hero .t1{top:36px;left:8%;transform:rotate(-8deg)}
+      .hero .t2{top:70px;right:10%;transform:rotate(10deg)}
+      @media (max-width:640px){.twinkle{display:none}}
+
+      section{position:relative}
+      .sec-title{font-family:"Anton",sans-serif;text-transform:uppercase;font-size:clamp(1.5rem,4vw,2.2rem);margin-bottom:8px}
+      .sec-sub{color:#222;font-weight:500;font-size:.95rem;margin-bottom:22px}
+      .tools{padding:40px 0 30px}
+
+      /* wizard indicator (1 Video → 2 Method → 3 Download) — cuma indikator, semua klikable */
+      .wizard{
+        display:flex;align-items:center;justify-content:center;gap:10px;
+        margin:0 auto 26px;max-width:640px;flex-wrap:wrap;
+      }
+      .wz-node{
+        display:inline-flex;align-items:center;gap:8px;border:2px solid var(--carbon);
+        border-radius:999px;padding:8px 18px 8px 8px;font-weight:800;font-size:.85rem;
+        text-transform:uppercase;letter-spacing:.04em;background:var(--paper);
+        transition:all .2s;cursor:pointer;
+      }
+      .wz-node .n{
+        font-family:"Anton",sans-serif;width:28px;height:28px;border-radius:999px;
+        display:grid;place-items:center;background:var(--mist);font-size:.9rem;
+        border:2px solid var(--carbon);
+      }
+      .wz-node.active{background:var(--sunburst);transform:rotate(-1.5deg) scale(1.04)}
+      .wz-node.active .n{background:var(--carbon);color:var(--sunburst)}
+      .wz-node.done{background:var(--mint)}
+      .wz-node.done .n{background:var(--carbon);color:var(--mint)}
+      .wz-line{width:26px;height:2px;background:var(--carbon);flex-shrink:0}
+
+      /* per-device quota pill */
+      .qwrap{text-align:center;margin-bottom:20px}
+      .quota-pill{
+        display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:center;
+        border:2px solid var(--carbon);border-radius:999px;background:var(--paper);
+        padding:9px 20px;font-weight:800;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;
+        box-shadow:0 6px 14px rgba(0,0,0,.12);
+      }
+      .quota-pill b{letter-spacing:.02em}
+      .qcap{margin-top:8px;font-size:.78rem;font-weight:600;color:#444;text-transform:none;letter-spacing:0}
+      .qcap b{font-variant-numeric:tabular-nums}
+      .quota-pill.warn{background:#fff8d9}
+      .quota-pill.habis{background:#ffdcd3}
+
+      /* satu panel utuh santai ala upload-method */
+      .panel{
+        background:var(--paper);border:2px solid var(--carbon);border-radius:24px;
+        box-shadow:0 14px 30px rgba(0,0,0,.10);padding:28px;max-width:780px;
+        margin:0 auto;
+      }
+      .fw-block{padding:26px 0}
+      .fw-block:first-child{padding-top:0}
+      .fw-block:last-child{padding-bottom:0}
+      .fw-split{border:0;border-top:2px dashed rgba(0,0,0,.25)}
+      .step-title{
+        font-family:"Anton",sans-serif;text-transform:uppercase;font-size:1.2rem;
+        display:flex;align-items:center;gap:10px;margin-bottom:6px;
+      }
+      .step-body{font-weight:500;font-size:.92rem;color:#333;margin-bottom:16px}
+
+      /* drop zone */
+      .drop{
+        position:relative;display:block;width:100%;
+        border:3px dashed var(--carbon);border-radius:20px;
+        background:var(--sky);padding:30px 20px;text-align:center;cursor:pointer;
+        transition:transform .18s,background .18s,box-shadow .18s;
+      }
+      .drop:hover{transform:translateY(-2px);background:#cfe6ff}
+      .drop.drag{background:var(--sunburst);box-shadow:6px 6px 0 rgba(0,0,0,.15);transform:none}
+      .drop .di{font-size:2.2rem;display:block;margin-bottom:8px}
+      .drop b{display:block;font-size:1rem}
+      .drop .dfmt{margin-top:6px;font-size:.8rem;font-weight:700;color:#555}
+      .drop input{display:none}
+      .fmeta{font-weight:700;font-size:.85rem;color:#111;word-break:break-all;margin-top:10px;text-align:center}
+
+      /* OR divider + streaming link */
+      .orwith{display:flex;align-items:center;gap:14px;margin:16px 0}
+      .orwith::before,.orwith::after{content:'';flex:1;height:2px;background:var(--carbon);opacity:.15}
+      .orwith span{
+        font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+        background:var(--mist);border:2px solid var(--carbon);border-radius:999px;padding:4px 12px;
+      }
+      .mlink{display:flex;gap:10px;flex-wrap:wrap}
+      .mlink input{
+        flex:1;min-width:220px;padding:13px 16px;border:2px solid var(--carbon);
+        border-radius:14px;background:var(--sky);font:inherit;font-weight:700;font-size:.9rem;color:var(--carbon);
+      }
+      .mlink input:focus{outline:none;background:var(--paper);box-shadow:4px 4px 0 var(--sunburst)}
+      .speed-tag{
+        display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:800;
+        letter-spacing:.08em;text-transform:uppercase;border-radius:999px;
+        background:var(--mint);border:2px solid var(--carbon);padding:4px 12px;
+      }
+
+      /* method cards — mirror "Choose a method" ala upload-method */
+      .mhint{font-weight:500;font-size:.92rem;color:#333;margin-bottom:14px}
+      .mopt{
+        display:flex;flex-direction:column;gap:10px;border:2px solid var(--carbon);
+        border-radius:20px;background:var(--paper);padding:16px;cursor:pointer;
+        box-shadow:5px 5px 0 rgba(0,0,0,.08);transition:transform .18s,box-shadow .18s;
+        user-select:none;margin-bottom:12px;
+      }
+      .mopt:hover{transform:translateY(-2px);box-shadow:7px 8px 0 rgba(0,0,0,.10)}
+      .mopt.active{box-shadow:0 0 0 3px var(--sunburst),5px 5px 0 rgba(0,0,0,.14);background:#fffeed}
+      .mopt-head{display:flex;align-items:center;gap:10px}
+      .radio{
+        width:24px;height:24px;border:2px solid var(--carbon);border-radius:999px;
+        display:grid;place-items:center;flex-shrink:0;background:var(--paper);
+      }
+      .mopt.active .radio::after{content:'';width:11px;height:11px;border-radius:999px;background:var(--carbon)}
+      .mopt-title{font-family:"Anton",sans-serif;text-transform:uppercase;font-size:1.02rem;letter-spacing:.02em}
+      .badges{display:flex;gap:8px;flex-wrap:wrap}
+      .mbadge{
+        font-size:.68rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+        border:2px solid var(--carbon);border-radius:999px;padding:4px 12px;background:var(--mist);
+      }
+      .mbadge.hot{background:var(--sunburst)}
+      .mopt p{font-weight:500;font-size:.88rem;color:#333}
+      .mtut{
+        align-self:flex-start;display:inline-flex;align-items:center;gap:6px;
+        border:2px solid var(--carbon);border-radius:999px;padding:8px 16px;
+        font-weight:800;font-size:.8rem;background:var(--paper);transition:background .18s;
+      }
+      .mtut:hover{background:var(--mist)}
+
+      /* opsi extra (fitur situs asli, bukan bagian Method API) */
+      .row-label{
+        display:block;font-weight:800;font-size:.8rem;letter-spacing:.08em;
+        text-transform:uppercase;margin-bottom:10px;
+      }
+      .extras-sec{margin-top:22px}
+      .opt-card{
+        display:flex;gap:12px;align-items:flex-start;border:2px solid var(--carbon);
+        border-radius:16px;padding:14px;background:var(--mist);margin-bottom:10px;
+        cursor:pointer;user-select:none;transition:background .18s,transform .18s,box-shadow .18s;
+      }
+      .opt-card:hover{transform:translateY(-2px);box-shadow:4px 5px 0 rgba(0,0,0,.10)}
+      .opt-card.on{background:var(--paper);box-shadow:0 0 0 2px var(--sunburst)}
+      .ck{width:20px;height:20px;border:2px solid var(--carbon);border-radius:6px;background:var(--paper);flex-shrink:0;margin-top:3px}
+      .ck.on{background:var(--carbon)}
+      .ck.on::after{content:'✓';display:grid;place-items:center;height:100%;color:var(--sunburst);font-weight:900;font-size:.8rem;line-height:1}
+      .opt-card .ot{font-weight:800;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+      .opt-card small{display:block;font-weight:500;font-size:.78rem;color:#444;margin-top:3px}
+      .mfoot{margin-top:6px;font-size:.78rem;font-weight:700;color:#555}
+
+      /* step 3 */
+      .sumrow{
+        display:flex;gap:10px;align-items:center;flex-wrap:wrap;
+        border:2px solid var(--carbon);border-radius:14px;background:var(--sky);
+        padding:12px 16px;margin-bottom:16px;font-weight:700;font-size:.85rem;
+      }
+      .sts{min-height:24px;margin-top:14px;font-weight:700;font-size:.9rem}
+      .sts.err{color:var(--ember)}
+      .dl-row{margin-top:12px}
+      .dl-row [hidden]{display:none !important}
+
+      /* KREDIT WAJIB dari CompressBase — harus terlihat */
+      .credit{
+        display:inline-flex;align-items:center;gap:8px;border:2px solid var(--carbon);
+        border-radius:999px;background:var(--sunburst);padding:10px 24px;
+        font-weight:800;font-size:.88rem;margin-top:22px;
+      }
+      .credit a{text-decoration:underline;text-underline-offset:3px}
+      .checklist{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;justify-content:center}
+      .checklist span{
+        border:2px solid var(--carbon);border-radius:999px;padding:6px 14px;
+        font-size:.74rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+        background:var(--paper);
+      }
+      .gops{margin-top:14px;font-size:.8rem;font-weight:700;color:#555;text-align:center}
+
+      .note{
+        display:flex;gap:10px;align-items:flex-start;border:2px solid var(--carbon);
+        border-radius:14px;padding:12px 16px;font-size:.85rem;font-weight:500;margin-top:16px;
+        max-width:720px;margin-left:auto;margin-right:auto;
+      }
+      .note div{min-width:0;overflow-wrap:anywhere}
+      .note.warn{background:#fff8d9}
+      .note.ok{background:#e2fcee}
+      .note.info{background:var(--sky)}
+
+      .steps-sec{padding:50px 0 30px}
+      .step{
+        display:flex;gap:16px;align-items:flex-start;background:var(--paper);
+        border:2px solid var(--carbon);border-radius:20px;padding:18px 20px;
+        box-shadow:8px 8px 0 rgba(0,0,0,.08);margin-bottom:14px;max-width:780px;
+      }
+      .step .n{
+        font-family:"Anton",sans-serif;font-size:1.05rem;width:40px;height:40px;
+        display:grid;place-items:center;background:var(--carbon);color:var(--sunburst);
+        border-radius:999px;flex-shrink:0;
+      }
+      .step p{font-weight:500;font-size:.95rem}
+
+      footer{margin-top:50px}
+      .foot-band{background:var(--carbon);color:var(--paper);padding:34px 20px;text-align:center}
+      .foot-pill{
+        display:inline-block;border:2px solid var(--paper);border-radius:999px;
+        padding:12px 34px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px;
+      }
+      .foot-links{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;font-weight:700;font-size:.85rem}
+      .foot-links a:hover{color:var(--sunburst)}
+      .foot-note{margin-top:14px;font-size:.78rem;opacity:.7}
+
+      /* glow blob (Re di landing) */
+      html{scroll-behavior:smooth}
+      .glow{position:absolute;inset:0;overflow:hidden;z-index:0;pointer-events:none;user-select:none}
+      .glow i{position:absolute;display:block;border-radius:9999px;filter:blur(64px)}
+      .glow .b1{top:-7rem;left:-6rem;width:18rem;height:18rem;background:rgba(77,162,255,.30)}
+      .glow .b2{top:1.5rem;right:-6rem;width:18rem;height:18rem;background:rgba(220,238,255,.72)}
+      .glow .b3{bottom:-6rem;left:33%;width:16rem;height:16rem;background:rgba(85,219,156,.25)}
+      .glow .b4{top:50%;left:0;width:13rem;height:13rem;background:rgba(255,215,49,.25);transform:translateY(-50%)}
+      .hero .wrap,.tools .wrap,.steps-sec .wrap{position:relative;z-index:1}
+      .pill.sticker-hover{cursor:pointer}
+
+      @media (min-width:640px){
+        .glow .b2{width:28rem;height:28rem}
+        .glow .b3{width:20rem;height:20rem}
+        .glow .b4{width:16rem;height:16rem}
+      }
+      @media (max-width:640px){
+        .panel{padding:18px}
+        .mopt{padding:14px 12px}
+        .wz-line{display:none}
+        .wizard{gap:8px}
+      }
+      @media (max-width:480px){
+        .wz-node{font-size:.68rem;padding:6px 10px 6px 6px;gap:6px}
+        .wz-node .n{width:22px;height:22px;font-size:.78rem}
+        .wizard{gap:6px}
+        .quota-pill{font-size:.7rem;padding:8px 14px}
+        .mlink input{min-width:100%}
+        .note{font-size:.8rem}
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>ZIELL</span><span class="dot">•</span>
+        <span>@T4RAKE</span><span class="dot">•</span>
+        <span>COMPRESS METHOD</span><span class="dot">•</span>
+        <span>MP4 PATCHER</span><span class="dot">•</span>
+        <span>100% ON-DEVICE</span><span class="dot">•</span>
+        <span>NO UPLOAD</span><span class="dot">•</span>
+        <span>POWERED BY COMPRESSBASE</span><span class="dot">•</span>
+        <span>OPEN FOR COLLAB</span><span class="dot">•</span>
+        <span>ZIELL</span><span class="dot">•</span>
+        <span>@T4RAKE</span><span class="dot">•</span>
+        <span>COMPRESS METHOD</span><span class="dot">•</span>
+        <span>MP4 PATCHER</span><span class="dot">•</span>
+        <span>100% ON-DEVICE</span><span class="dot">•</span>
+        <span>NO UPLOAD</span><span class="dot">•</span>
+        <span>POWERED BY COMPRESSBASE</span><span class="dot">•</span>
+        <span>OPEN FOR COLLAB</span><span class="dot">•</span>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="glow" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i></div>
+      <span class="twinkle t1">✦</span><span class="twinkle t2">✦</span>
+
+      <div class="wrap">
+        <div class="reveal" data-delay="0" style="margin-bottom:20px"><div class="badge animate-float-soft">TOOL • COMPRESSBASE</div></div>
+        <h1 class="reveal" data-delay="90">Compress<br>Method</h1>
+        <p class="sub reveal" data-delay="180">Pilih video, pilih method, Start processing — ala <b>CompressBase</b>.
+        Video &amp; audio <b>100% tetap di device-mu</b>, yang dikirim cuma metadata.</p>
+
+        <div class="pills reveal" data-delay="270">
+          <span class="pill mint sticker-hover">100% Lokal</span>
+          <span class="pill blue sticker-hover">No Upload</span>
+          <span class="pill yellow sticker-hover">6x / Hari / Device</span>
+        </div>
+
+        <div style="margin-top:30px" class="reveal" data-delay="360">
+          <a class="btn black" href="#tools">Mulai ↓</a>
+          <a class="btn white" href="#cara">Cara Pakai</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ONE-FORM WIZARD ala upload-method -->
+    <section class="tools" id="tools">
+      <div class="wrap">
+        <h2 class="sec-title reveal" data-delay="0">Patch Panel</h2>
+        <p class="sec-sub reveal" data-delay="80">Semua di satu form — pilih video, pilih method, Start processing.</p>
+
+        <div class="qwrap reveal" data-delay="140">
+          <span class="quota-pill" id="quota" title="Kuota per device (localStorage), reset tengah malam UTC">
+            ⚡ Free Access · Per Device
+            <b id="qtext">6 of 6 uses left today</b>
+          </span>
+          <div class="qcap">This device's allowance resets daily at midnight UTC · <b id="qto">--:--:--</b></div>
+        </div>
+
+        <div class="wizard reveal" data-delay="180" role="list">
+          <span class="wz-node active" id="wz-1"><span class="n">1</span> Video</span>
+          <span class="wz-line"></span>
+          <span class="wz-node" id="wz-2"><span class="n">2</span> Method</span>
+          <span class="wz-line"></span>
+          <span class="wz-node" id="wz-3"><span class="n">3</span> Download</span>
+        </div>
+
+        <div class="panel reveal" data-delay="220">
+
+          <!-- 1 · VIDEO -->
+          <div class="fw-block" id="sec-1">
+            <div class="step-title"><b>1 ·</b> Pilih Video</div>
+            <p class="step-body">Format yang didukung: <b>MP4</b> (non-fragmented).</p>
+
+            <label class="drop" id="drop">
+              <input type="file" id="in-file" accept="video/mp4">
+              <span class="di">🎬</span>
+              <b>Klik / tarik video MP4 ke sini</b>
+              <span class="dfmt">Browser cuma baca metadata container — bukan load full video ke memori</span>
+            </label>
+            <div class="fmeta" id="f-meta"></div>
+
+            <div class="orwith"><span>ATAU</span></div>
+
+            <span class="row-label">
+              <span class="speed-tag">⚡ Up to 100× faster</span> Pakai link streaming
+            </span>
+            <div class="mlink">
+              <input type="url" id="in-stream" placeholder="https://compressbase.com/streamable/… atau https://video.itzcrih.it/…">
+              <button class="btn white" id="btn-stream" type="button">Ambil Video</button>
+            </div>
+          </div>
+
+          <hr class="fw-split">
+
+          <!-- 2 · CHOOSE A METHOD -->
+          <div class="fw-block" id="sec-2">
+            <div class="step-title"><b>2 ·</b> Choose a Method</div>
+            <p class="mhint">Pilihan method resmi — sama seperti <b>compressbase.com/upload-method</b>:
+            <b>Max Quality + FPS</b> ter-select otomatis (recommended), tinggal ganti bila perlu.</p>
+
+            <div class="mopt active" data-v="variant-1" data-name="Max Quality + FPS Method" role="button" tabindex="0">
+              <div class="mopt-head">
+                <span class="radio"></span>
+                <span class="mopt-title">Max Quality + FPS Method</span>
+              </div>
+              <div class="badges">
+                <span class="mbadge hot">Recommended — Start Here</span>
+                <span class="mbadge hot">New Version</span>
+                <span class="mbadge hot" id="qleft">6 of 6 left</span>
+              </div>
+              <p>Pertahankan kualitas sebanyak mungkin — mendukung video <b>sampai 1080p &amp; 120 FPS</b>.</p>
+              <a class="mtut" href="https://compressbase.com/upload-method" target="_blank" rel="noopener">Watch tutorial ▶</a>
+            </div>
+
+            <div class="mopt" data-v="phone" data-name="FPS Method" role="button" tabindex="0">
+              <div class="mopt-head">
+                <span class="radio"></span>
+                <span class="mopt-title">FPS Method</span>
+              </div>
+              <div class="badges"><span class="mbadge">Legacy · Phone</span></div>
+              <p>Buat pemakaian <b>phone</b> — hanya patch <b>FPS</b>-nya saja, tidak termasuk method kualitas.</p>
+              <a class="mtut" href="https://compressbase.com/upload-method" target="_blank" rel="noopener">Watch tutorial ▶</a>
+            </div>
+
+            <div class="mopt" data-v="variant-2" data-name="Holy Aggressive (Variant 2)" role="button" tabindex="0">
+              <div class="mopt-head">
+                <span class="radio"></span>
+                <span class="mopt-title">Holy Aggressive</span>
+              </div>
+              <div class="badges"><span class="mbadge">Ghost 12×</span><span class="mbadge">Dari Method API</span></div>
+              <p>Method alternatif paling agresif — buat kondisi di mana method utama bermasalah.</p>
+            </div>
+
+            <div class="mopt" data-v="variant-3" data-name="Not Aggressive (Variant 3)" role="button" tabindex="0">
+              <div class="mopt-head">
+                <span class="radio"></span>
+                <span class="mopt-title">Not Aggressive</span>
+              </div>
+              <div class="badges"><span class="mbadge">Ghost 17/3</span><span class="mbadge">Dari Method API</span></div>
+              <p>Versi ghost yang lebih enteng — alternatif kedua.</p>
+            </div>
+
+            <div class="extras-sec">
+              <span class="row-label">Ekstra / Opsi <small style="text-transform:none;font-weight:600;color:#555">(toggle jalan lokal; proses penuhnya di situs asli)</small></span>
+              <div class="opt-card" id="opt-antilag" role="switch" aria-checked="false" tabindex="0">
+                <span class="ck"></span>
+                <div>
+                  <div class="ot">Anti Lag <span class="mbadge" style="margin-left:6px">Beta</span></div>
+                  <small>Target di bawah 20 MB sebelum patching (lossy, client side atau server side — video
+                  ≥ 300 MB otomatis pakai client side).</small>
+                </div>
+              </div>
+              <div class="opt-card" id="opt-tiktok" role="switch" aria-checked="false" tabindex="0">
+                <span class="ck"></span>
+                <div>
+                  <div class="ot">Optimize File Size for TikTok <span class="mbadge" style="margin-left:6px">Optional</span></div>
+                  <small>Bikin file lebih kecil dengan kualitas visual yang tetap bagus + resize otomatis bila perlu.</small>
+                </div>
+              </div>
+              <div class="mfoot">Fitur penuh ada di situs asli:
+                <a href="https://compressbase.com/upload-method" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px">compressbase.com/upload-method ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <hr class="fw-split">
+
+          <!-- 3 · START PROCESSING & DOWNLOAD -->
+          <div class="fw-block" id="sec-3">
+            <div class="step-title"><b>3 ·</b> Start Processing</div>
+            <div class="sumrow">
+              🎬 <span id="sum-file">—</span>
+              <span style="margin-left:auto">Method: <b id="sum-method">Max Quality + FPS Method (variant-1)</b></span>
+            </div>
+            <button class="btn yellow" id="btn-patch" type="button" style="min-width:250px">▶ Start Processing →</button>
+            <p class="sts" id="sts" role="status"></p>
+            <div class="dl-row"><a class="btn black" id="dl-link" hidden>⬇️ Download Hasil Patch</a></div>
+
+            <!-- Kredit WAJIB CompressBase — visibel di samping tool -->
+            <div style="text-align:center">
+              <p class="credit">⚡ Powered by <a href="https://compressbase.com/" target="_blank" rel="noopener">CompressBase</a></p>
+            </div>
+            <div class="checklist">
+              <span>MP4 Only</span>
+              <span>Non-Fragmented</span>
+              <span>≤ 8 GB</span>
+              <span>≤ 1080p</span>
+              <span>Audio Tetap</span>
+            </div>
+            <div class="gops">Total patch global: <b id="gpatch">…</b></div>
+          </div>
+
+        </div>
+
+        <div class="note info reveal" data-delay="280">
+          <div><b>Method API resmi</b> dari CompressBase — no API key, free. Dokumentasi:
+          <a href="https://compressbase.com/method-api" target="_blank" rel="noopener" style="text-decoration:underline;text-underline-offset:3px">compressbase.com/method-api</a>.
+          Kredit “Powered by CompressBase” adalah syarat pemakaian API — visibel di panel atas.</div>
+        </div>
+        <div class="note warn reveal" data-delay="340">
+          <div><b>Resolusi di atas 1080p ditolak server</b> (HTTP 422 — “file is above 1080p, pls downscale it”).
+          Turunkan dulu resolusinya, baru patch di sini. Portrait / landscape 1080p keduanya diterima.</div>
+        </div>
+        <div class="note ok reveal" data-delay="400">
+          <div><b>Kenapa aman?</b> Yang dikirim cuma struktur metadata (moov box) — payload video/audio tidak
+          pernah keluar dari device-mu. Output menyertakan comment resmi “Patched by Compressbase”.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="steps-sec" id="cara">
+      <div class="wrap">
+        <h2 class="sec-title reveal" data-delay="0">Cara Pakai</h2>
+        <p class="sec-sub reveal" data-delay="80">Sama seperti wizard di atas — 3 gerakan.</p>
+        <div class="step reveal" data-delay="120"><div class="n">1</div>
+          <p><b>Pilih video MP4</b> (≤ 8 GB, ≤ 1080p) atau tempel link streaming bila ada.</p></div>
+        <div class="step reveal" data-delay="240"><div class="n">2</div>
+          <p><b>Pilih method</b>: Max Quality + FPS (rekomendasi) / FPS Method / Holy Aggressive / Not Aggressive.</p></div>
+        <div class="step reveal" data-delay="360"><div class="n">3</div>
+          <p><b>Start processing &amp; download</b> — API balas patch plan, hasil dirakit lokal, video/audio tidak pernah di-upload.</p></div>
+        <div class="note ok reveal" data-delay="460">
+          <div><b>Kuota:</b> 6 patch / hari / device (terhitung kalau patch berhasil), reset otomatis
+          <b>tengah malam UTC</b> — sama seperti situs aslinya.</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot-band">
+        <div class="foot-pill">ziellvfx.com</div>
+        <div class="foot-links">
+          <a href="/">Home</a>
+          <a href="/links">Links</a>
+          <a href="/contact">Contact</a>
+          <a href="/tools">Tools</a>
+          <a href="/tools/alightmotion">AM Premium</a>
+          <a href="/tools/method">Method</a>
+        </div>
+        <div class="foot-note">© <span id="yr"></span> ZIELL — Multi-disciplinary Creator</div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('yr').textContent = new Date().getFullYear();
+
+      /* ---------- scroll reveal (kaya landing) ---------- */
+      (function () {
+        const els = document.querySelectorAll('.reveal');
+        if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          els.forEach(el => el.classList.add('is-in'));
+          return;
+        }
+        const io = new IntersectionObserver(entries => {
+          for (const en of entries) {
+            if (!en.isIntersecting) continue;
+            const el = en.target;
+            const d = Number(el.dataset.delay || 0);
+            if (d) el.style.transitionDelay = d + 'ms';
+            el.classList.add('is-in');
+            if (d) setTimeout(() => { el.style.transitionDelay = '0ms'; }, d + 800);
+            io.unobserve(el);
+          }
+        }, { threshold: .12, rootMargin: '0px 0px -60px 0px' });
+        els.forEach(el => io.observe(el));
+      })();
+
+      /* ---------- counter patch global (public stats) ---------- */
+      (async () => {
+        const el = document.getElementById('gpatch');
+        try {
+          const r = await fetch('https://compressbase.com/api/method/v1/stats');
+          if (!r.ok) throw 0;
+          const d = await r.json();
+          el.textContent = Number(d && d.patches || 0).toLocaleString('id-ID');
+        } catch (e) {
+          el.textContent = 'tidak tersedia';
+        }
+      })();
+    </script>
+
+    <!-- patch engine: helper resmi hosted di CompressBase (semua proses lokal di browser) -->
+    <script type="module">
+      import { patchVideo } from 'https://compressbase.com/method-api/client.mjs';
+
+      const $ = id => document.getElementById(id);
+
+      const nodes = { 1: $('wz-1'), 2: $('wz-2'), 3: $('wz-3') };
+      let picked = null, outUrl = null;
+      let variant = 'variant-1';     // recommended ter-select default ala CB
+      let patching = false;
+
+      /* indikator wizard + scroll ke section (tanpa mengunci apa pun) */
+      function paintNodes() {
+        nodes[1].classList.toggle('done', !!picked);
+        nodes[2].classList.toggle('done', !!picked && !!variant);
+        nodes[3].classList.toggle('done', !!outUrl);
+        nodes[1].classList.toggle('active', !picked);
+        nodes[2].classList.toggle('active', !!picked && !outUrl);
+        nodes[3].classList.toggle('active', !!outUrl);
+      }
+      for (let i = 1; i <= 3; i++) {
+        nodes[i].addEventListener('click', () => {
+          $('sec-' + i).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
+
+      /* ---------- kuota per-device: 6/hari, reset tengah malam UTC ---------- */
+      const LIMIT = 6, KEY = 'zb-method-quota';
+      const utcDay = () => new Date().toISOString().slice(0, 10);
+      const load = () => {
+        try {
+          const d = JSON.parse(localStorage.getItem(KEY) || 'null');
+          return d && d.day === utcDay() ? d : { day: utcDay(), used: 0 };
+        } catch { return { day: utcDay(), used: 0 }; }
+      };
+      const save = d => { try { localStorage.setItem(KEY, JSON.stringify(d)); } catch {} };
+
+      /* countdown reset ala CB: HH:MM:SS live */
+      function paintCountdown() {
+        const now = new Date();
+        const next = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + 1));
+        let s = Math.max(0, Math.floor((next - now) / 1000));
+        const hh = String(Math.floor(s / 3600)).padStart(2, '0');
+        const mm = String(Math.floor((s % 3600) / 60)).padStart(2, '0');
+        const ss = String(s % 60).padStart(2, '0');
+        const el = $('qto');
+        if (el) el.textContent = hh + ':' + mm + ':' + ss;
+      }
+
+      function paintQuota() {
+        const d = load(), left = Math.max(0, LIMIT - d.used), q = $('quota');
+        $('qtext').textContent = left + ' of ' + LIMIT + ' uses left today';
+        q.classList.toggle('warn', d.used > 0 && left > 0);
+        q.classList.toggle('habis', left === 0);
+        const ql = $('qleft');
+        if (ql) ql.textContent = left + ' of ' + LIMIT + ' left';
+        paintCountdown();
+      }
+
+      /* ---------- status helper ---------- */
+      const stsEl = $('sts');
+      const setSts = (msg, err) => { stsEl.textContent = msg || ''; stsEl.classList.toggle('err', !!err); };
+      const fmt = n => n >= 1073741824 ? (n/1073741824).toFixed(2)+' GB' : (n/1048576).toFixed(1)+' MB';
+
+      /* ---------- 1 · video: file & link ---------- */
+      const fileIn = $('in-file'), drop = $('drop'), fmeta = $('f-meta');
+
+      function acceptFile(f) {
+        if (!f) return;
+        if (f.type !== 'video/mp4' && !/\.mp4$/i.test(f.name)) { setSts('Harus file .mp4 ya.', true); return; }
+        if (f.size >= 8 * 1073741824) { setSts('Maksimal 8 GB — file kebesaran.', true); return; }
+        picked = f;
+        fmeta.textContent = '✅ ' + f.name + ' · ' + fmt(f.size);
+        $('sum-file').textContent = f.name + ' · ' + fmt(f.size);
+        $('dl-link').hidden = true;
+        setSts('');
+        paintNodes(); paintQuota();
+      }
+      fileIn.addEventListener('change', () => acceptFile(fileIn.files[0]));
+      ['dragenter','dragover'].forEach(ev => drop.addEventListener(ev, e => {
+        e.preventDefault(); drop.classList.add('drag');
+      }));
+      ['dragleave','drop'].forEach(ev => drop.addEventListener(ev, e => {
+        e.preventDefault(); drop.classList.remove('drag');
+      }));
+      drop.addEventListener('drop', e => {
+        const f = e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0];
+        if (f) { try { fileIn.files = e.dataTransfer.files; } catch {} acceptFile(f); }
+      });
+
+      /* streaming link: best effort — hanya link resmi CompressBase / itzcrih */
+      $('btn-stream').addEventListener('click', async () => {
+        const raw = $('in-stream').value.trim();
+        if (!raw) { setSts('Tempel dulu link-nya.', true); return; }
+        if (!/compressbase\.com|video\.itzcrih\.it/i.test(raw)) {
+          setSts('Saat ini cuma dukung link CompressBase Streamable / video.itzcrih.it. Video lain: download dulu lalu pilih manual.', true);
+          return;
+        }
+        setSts('Mengambil video dari link…');
+        try {
+          const r = await fetch(raw, { redirect: 'follow', credentials: 'omit' });
+          if (!r.ok) throw new Error('HTTP ' + r.status);
+          const blob = await r.blob();
+          const name = decodeURIComponent((new URL(raw).pathname.split('/').pop() || 'stream.mp4'))
+            .replace(/[^\w.\-]+/g, '_').replace(/\.mp4$/i, '') + '.mp4';
+          acceptFile(new File([blob], blob.type.includes('mp4') ? name : name + '.mp4', { type: 'video/mp4' }));
+          setSts('');
+        } catch (e) {
+          setSts('Gagal ambil dari link (' + (e.message || 'CORS/blocked') + '). Tip: download video manual, lalu pilih via tombol.', true);
+        }
+      });
+
+      /* ---------- 2 · pilih method (radio ala CB, gak ada auto-scroll) ---------- */
+      document.querySelectorAll('.mopt').forEach(card => card.addEventListener('click', () => {
+        variant = card.dataset.v;
+        document.querySelectorAll('.mopt').forEach(c => c.classList.remove('active'));
+        card.classList.add('active');
+        $('sum-method').textContent = card.dataset.name + ' (' + variant + ')';
+        paintNodes();
+      }));
+
+      /* ---------- ekstra/opsi: toggle checkbox (ala CB) ---------- */
+      const flags = { antilag: false, tiktok: false };
+      function bindOpt(row, key) {
+        const toggle = () => {
+          flags[key] = !flags[key];
+          row.classList.toggle('on', flags[key]);
+          row.setAttribute('aria-checked', String(flags[key]));
+          row.querySelector('.ck').classList.toggle('on', flags[key]);
+        };
+        row.addEventListener('click', toggle);
+        row.addEventListener('keydown', e => {
+          if (e.key === ' ') { e.preventDefault(); toggle(); }
+        });
+      }
+      bindOpt($('opt-antilag'), 'antilag');
+      bindOpt($('opt-tiktok'), 'tiktok');
+
+      /* ---------- 3 · Start processing & download ---------- */
+      const btn = $('btn-patch'), dl = $('dl-link');
+
+      btn.addEventListener('click', async () => {
+        if (patching) return;
+        const q = load();
+        if (LIMIT - q.used <= 0) { setSts('Kuota harian habis (' + LIMIT + ' patch) — reset tengah malam UTC.', true); return; }
+        if (!picked) { setSts('Pilih video dulu di step 1.', true); return; }
+        if (!variant) { setSts('Pilih method dulu di step 2.', true); return; }
+
+        patching = true; btn.disabled = true; dl.hidden = true;
+        setSts('Patching metadata…');
+        try {
+          const output = await patchVideo(picked, {
+            postingDevice: variant,
+            signal: AbortSignal.timeout(180000),
+            onStatus: m => setSts(m)
+          });
+          const d2 = load(); d2.used += 1; save(d2);   // 1 patch sukses = 1 pemakaian
+          if (outUrl) URL.revokeObjectURL(outUrl);
+          outUrl = URL.createObjectURL(output);
+          dl.href = outUrl;
+          dl.download = picked.name.replace(/\.mp4$/i, '') + '_patched.mp4';
+          dl.hidden = false;
+          paintNodes(); paintQuota();
+          let extra = '';
+          if (flags.antilag) extra += picked.size <= 20 * 1048576
+            ? ' · Anti Lag: file sudah < 20 MB, aman tanpa kompres'
+            : ' · Anti Lag penuh (target < 20 MB) jalan di situs asli';
+          if (flags.tiktok) extra += ' · Optimize TikTok jalan penuh di situs asli';
+          setSts('Done — video 100% tetap di device-mu, silakan download. (Kuota: ' + d2.used + '/' + LIMIT + ' hari ini)' + extra);
+          try { dl.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch {}
+        } catch (e) {
+          setSts((e && e.message) ? e.message : 'Patch gagal.', true);
+        } finally {
+          patching = false; btn.disabled = false;
+        }
+      });
+
+      paintNodes(); paintQuota();
+      setInterval(paintQuota, 30000);
+      paintCountdown();
+      setInterval(paintCountdown, 1000);
+    </script>
+  </body>
+</html>
