@@ -1,66 +1,118 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <clipPath id="avclip"><rect x="540" y="70" width="120" height="120" rx="30"/></clipPath>
-    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="48"/></filter>
+    <clipPath id="avclip"><rect x="135" y="145" width="160" height="160" rx="36"/></clipPath>
+    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="55"/></filter>
+    <filter id="card-shadow" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="10" dy="10" stdDeviation="0" flood-color="#000000" flood-opacity="1"/>
+    </filter>
   </defs>
 
-  <!-- ============ BG sky wash + blobs ============ -->
+  <!-- ============ Background: Sky Wash & Ambient Glow ============ -->
   <rect width="1200" height="630" fill="#dceeff"/>
   <g filter="url(#soft)">
-    <circle cx="70" cy="470" r="150" fill="#4da2ff" opacity="0.34"/>
-    <circle cx="1120" cy="120" r="170" fill="#ffffff" opacity="0.85"/>
-    <circle cx="960" cy="580" r="140" fill="#55db9c" opacity="0.26"/>
-    <circle cx="130" cy="110" r="120" fill="#ffd731" opacity="0.30"/>
+    <circle cx="80" cy="520" r="160" fill="#4da2ff" opacity="0.30"/>
+    <circle cx="1140" cy="110" r="180" fill="#ffffff" opacity="0.90"/>
+    <circle cx="1020" cy="560" r="150" fill="#55db9c" opacity="0.25"/>
+    <circle cx="150" cy="110" r="130" fill="#ffd731" opacity="0.35"/>
   </g>
-  <path d="M0,590 C260,440 470,630 760,510 C980,424 1110,540 1200,496" stroke="#1555a6" stroke-width="26" fill="none" stroke-linecap="round" opacity="0.14"/>
-  <path d="M0,586 C260,436 470,626 760,506 C980,420 1110,536 1200,492" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round" opacity="0.7"/>
 
-  <!-- ============ Top marquee bar ============ -->
+  <!-- Background playful wave lines -->
+  <path d="M0,590 C260,440 470,630 760,510 C980,424 1110,540 1200,496" stroke="#1555a6" stroke-width="24" fill="none" stroke-linecap="round" opacity="0.12"/>
+  <path d="M0,586 C260,436 470,626 760,506 C980,420 1110,536 1200,492" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- ============ Top Black Marquee Tape ============ -->
   <rect x="0" y="0" width="1200" height="46" fill="#000000"/>
-  <text x="600" y="30" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="16" letter-spacing="3" fill="#ffffff">ZIELL • @T4RAKE  ✦  VIDEO EDITING  ✦  WEB DEV  ✦  OPEN FOR COLLAB</text>
+  <text x="600" y="29" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14.5" letter-spacing="3" fill="#ffffff">ZIELL • @T4RAKE  ✦  VIDEO EDITING  ✦  WEB DEV  ✦  BOT &amp; AUTOMATION  ✦  OPEN FOR COLLAB</text>
 
-  <!-- ============ Avatar card ============ -->
-  <rect x="534" y="64" width="132" height="132" rx="34" fill="#ffffff" stroke="#000000" stroke-width="3"/>
-  <g clip-path="url(#avclip)">
-    <image href="pswsbhar.jpg" xlink:href="pswsbhar.jpg" x="540" y="70" width="120" height="120" preserveAspectRatio="xMidYMid slice"/>
-  </g>
-
-  <!-- ============ Name ============ -->
-  <text x="600" y="412" text-anchor="middle" font-family="Anton" font-size="215" letter-spacing="4" fill="#000000">ZIELL</text>
-
-  <!-- ============ Handle pill ============ -->
-  <rect x="430" y="440" width="340" height="46" rx="23" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
-  <text x="600" y="471" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="17" letter-spacing="1.5" fill="#000000">@T4RAKE • INDONESIA</text>
-
-  <!-- ============ Role stickers ============ -->
-  <!-- VIDEO EDITING (blue) -->
-  <g transform="rotate(-2 232 510)">
-    <rect x="128" y="489" width="208" height="42" rx="21" fill="#4da2ff" stroke="#000000" stroke-width="2.5"/>
-    <text x="232" y="517" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="15.5" letter-spacing="1" fill="#000000">VIDEO EDITING</text>
-  </g>
-  <!-- WEB DEV (mint) -->
-  <g transform="rotate(1.5 452 510)">
-    <rect x="376" y="489" width="152" height="42" rx="21" fill="#55db9c" stroke="#000000" stroke-width="2.5"/>
-    <text x="452" y="517" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="15.5" letter-spacing="1" fill="#000000">WEB DEV</text>
-  </g>
-  <!-- BOT &amp; AUTOMATION (ember) -->
-  <g transform="rotate(-1.5 718 510)">
-    <rect x="618" y="489" width="200" height="42" rx="21" fill="#fb4903" stroke="#000000" stroke-width="2.5"/>
-    <text x="718" y="517" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="15.5" letter-spacing="1" fill="#ffffff">BOT &amp; AUTOMATION</text>
-  </g>
-  <!-- GRAPHIC DESIGN (sunburst) -->
-  <g transform="rotate(2 960 510)">
-    <rect x="858" y="489" width="204" height="42" rx="21" fill="#ffd731" stroke="#000000" stroke-width="2.5"/>
-    <text x="960" y="517" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="15.5" letter-spacing="1" fill="#000000">GRAPHIC DESIGN</text>
-  </g>
-
-  <!-- ============ URL pill ============ -->
-  <rect x="460" y="558" width="280" height="48" rx="24" fill="#000000"/>
-  <text x="600" y="591" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="19" letter-spacing="1.5" fill="#ffffff">ziellvfx.com</text>
-
-  <!-- sparkle decos -->
+  <!-- ============ Sparkles in Background ============ -->
   <g fill="#000000" opacity="0.85">
-    <path d="M149,58 C150.6,65.6 156.4,71.4 164,73 C156.4,74.6 150.6,80.4 149,88 C147.4,80.4 141.6,74.6 134,73 C141.6,71.4 147.4,65.6 149,58 Z"/>
-    <path d="M1052,52 C1053.6,59.6 1059.4,65.4 1067,67 C1059.4,68.6 1053.6,74.4 1052,82 C1050.4,74.4 1044.6,68.6 1037,67 C1044.6,65.4 1050.4,59.6 1052,52 Z"/>
+    <path d="M56,76 C57.8,85 64.5,91.8 73.5,93.5 C64.5,95.2 57.8,102 56,111 C54.2,102 47.5,95.2 38.5,93.5 C47.5,91.8 54.2,85 56,76 Z"/>
+    <path d="M1135,70 C1136.8,79 1143.5,85.8 1152.5,87.5 C1143.5,89.2 1136.8,96 1135,105 C1133.2,96 1126.5,89.2 1117.5,87.5 C1126.5,85.8 1133.2,79 1135,70 Z"/>
+    <path d="M1150,560 C1151.5,567 1156.5,572 1163.5,573.5 C1156.5,575 1151.5,580 1150,587 C1148.5,580 1143.5,575 1136.5,573.5 C1143.5,572 1148.5,567 1150,560 Z"/>
   </g>
+
+  <!-- ============ Main Central Neo-brutalist Card ============ -->
+  <!-- Hard Shadow -->
+  <rect x="90" y="90" width="1030" height="495" rx="36" fill="#000000"/>
+  <!-- Card Base -->
+  <rect x="80" y="80" width="1030" height="495" rx="36" fill="#ffffff" stroke="#000000" stroke-width="3.5"/>
+
+  <!-- Card Header Inner Pill -->
+  <rect x="110" y="105" width="220" height="32" rx="16" fill="#f0f4f8" stroke="#000000" stroke-width="2"/>
+  <text x="220" y="126" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="12" letter-spacing="1.5" fill="#000000">CREATOR PORTFOLIO</text>
+
+  <!-- ============ Left: Avatar & Collab Badge ============ -->
+  <!-- Avatar border card -->
+  <rect x="129" y="149" width="172" height="172" rx="40" fill="#000000"/>
+  <rect x="125" y="145" width="172" height="172" rx="40" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+  <g clip-path="url(#avclip)">
+    <image href="pswsbhar.jpg" xlink:href="pswsbhar.jpg" x="135" y="145" width="160" height="160" preserveAspectRatio="xMidYMid slice"/>
+  </g>
+
+  <!-- Open for Collab Sticker (tilted) -->
+  <g transform="rotate(-3 211 348)">
+    <rect x="111" y="328" width="200" height="38" rx="19" fill="#000000"/>
+    <rect x="108" y="325" width="200" height="38" rx="19" fill="#ffd731" stroke="#000000" stroke-width="2.5"/>
+    <text x="208" y="349" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="13" letter-spacing="1" fill="#000000">✦ OPEN FOR COLLAB</text>
+  </g>
+
+  <!-- ============ Right: Info, Name & Tagline ============ -->
+  <!-- Handle & Location -->
+  <rect x="340" y="115" width="260" height="36" rx="18" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+  <text x="470" y="139" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14" letter-spacing="1.5" fill="#000000">@T4RAKE  •  INDONESIA</text>
+
+  <!-- Big Name -->
+  <text x="340" y="245" font-family="Anton" font-size="118" letter-spacing="2" fill="#000000">ZIELL</text>
+
+  <!-- Headline -->
+  <g transform="rotate(-1 560 270)">
+    <rect x="340" y="255" width="370" height="34" rx="8" fill="#fb4903" stroke="#000000" stroke-width="2"/>
+    <text x="525" y="278" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="15" letter-spacing="1.5" fill="#ffffff">MULTI-DISCIPLINARY CREATOR</text>
+  </g>
+
+  <!-- Description / Bio -->
+  <text x="340" y="328" font-family="Plus Jakarta Sans" font-weight="700" font-size="19" fill="#111111">Building things across video editing, web development &amp; automation.</text>
+  <text x="340" y="356" font-family="Plus Jakarta Sans" font-weight="600" font-size="16" fill="#555555">High quality edits, modern responsive web, custom bots and digital tools.</text>
+
+  <!-- Divider Line -->
+  <line x1="110" y1="388" x2="1080" y2="388" stroke="#000000" stroke-width="2.5" stroke-dasharray="6 6"/>
+
+  <!-- ============ Bottom Section: Role Stickers & URL ============ -->
+  <!-- Sticker 1: Video Editing -->
+  <g transform="rotate(-1.5 220 440)">
+    <rect x="114" y="418" width="192" height="46" rx="23" fill="#000000"/>
+    <rect x="110" y="414" width="192" height="46" rx="23" fill="#4da2ff" stroke="#000000" stroke-width="2.5"/>
+    <text x="206" y="443" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14.5" letter-spacing="1" fill="#000000">VIDEO EDITING</text>
+  </g>
+
+  <!-- Sticker 2: Web Dev -->
+  <g transform="rotate(1.5 390 440)">
+    <rect x="314" y="418" width="152" height="46" rx="23" fill="#000000"/>
+    <rect x="310" y="414" width="152" height="46" rx="23" fill="#55db9c" stroke="#000000" stroke-width="2.5"/>
+    <text x="386" y="443" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14.5" letter-spacing="1" fill="#000000">WEB DEV</text>
+  </g>
+
+  <!-- Sticker 3: Bot & Automation -->
+  <g transform="rotate(-1 560 440)">
+    <rect x="474" y="418" width="220" height="46" rx="23" fill="#000000"/>
+    <rect x="470" y="414" width="220" height="46" rx="23" fill="#fb4903" stroke="#000000" stroke-width="2.5"/>
+    <text x="580" y="443" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14" letter-spacing="1" fill="#ffffff">BOT &amp; AUTOMATION</text>
+  </g>
+
+  <!-- Sticker 4: Graphic Design -->
+  <g transform="rotate(1.5 780 440)">
+    <rect x="704" y="418" width="186" height="46" rx="23" fill="#000000"/>
+    <rect x="700" y="414" width="186" height="46" rx="23" fill="#ffd731" stroke="#000000" stroke-width="2.5"/>
+    <text x="793" y="443" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14" letter-spacing="1" fill="#000000">GRAPHIC DESIGN</text>
+  </g>
+
+  <!-- Website URL Pill Button (Right aligned) -->
+  <g>
+    <rect x="904" y="416" width="180" height="48" rx="24" fill="#000000"/>
+    <rect x="900" y="412" width="180" height="48" rx="24" fill="#000000" stroke="#000000" stroke-width="2.5"/>
+    <text x="990" y="442" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="16" letter-spacing="1" fill="#ffffff">ziellvfx.com ↗</text>
+  </g>
+
+  <!-- Bottom tag inside card -->
+  <text x="600" y="525" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="700" font-size="13" letter-spacing="2" fill="#888888">LINKS • CONTACT • TOOLS • PROJECTS</text>
 </svg>
