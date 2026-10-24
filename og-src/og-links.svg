@@ -1,69 +1,94 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="48"/></filter>
+    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="55"/></filter>
   </defs>
 
-  <!-- ============ BG white + blobs ============ -->
-  <rect width="1200" height="630" fill="#ffffff"/>
+  <!-- ============ Background: Sky Wash & Ambient Glow ============ -->
+  <rect width="1200" height="630" fill="#dceeff"/>
   <g filter="url(#soft)">
-    <circle cx="40" cy="560" r="150" fill="#4da2ff" opacity="0.22"/>
-    <circle cx="1160" cy="80" r="160" fill="#dceeff" opacity="0.9"/>
-    <circle cx="1010" cy="560" r="130" fill="#55db9c" opacity="0.2"/>
-    <circle cx="110" cy="90" r="110" fill="#ffd731" opacity="0.22"/>
+    <circle cx="80" cy="520" r="160" fill="#4da2ff" opacity="0.25"/>
+    <circle cx="1140" cy="110" r="180" fill="#ffffff" opacity="0.90"/>
+    <circle cx="1020" cy="560" r="150" fill="#55db9c" opacity="0.22"/>
+    <circle cx="150" cy="110" r="130" fill="#ffd731" opacity="0.30"/>
   </g>
+  <path d="M0,590 C260,440 470,630 760,510 C980,424 1110,540 1200,496" stroke="#1555a6" stroke-width="24" fill="none" stroke-linecap="round" opacity="0.12"/>
+  <path d="M0,586 C260,436 470,626 760,506 C980,420 1110,536 1200,492" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.75"/>
 
-  <!-- ============ Top marquee bar ============ -->
+  <!-- ============ Top Black Marquee Tape ============ -->
   <rect x="0" y="0" width="1200" height="46" fill="#000000"/>
-  <text x="600" y="30" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="16" letter-spacing="3" fill="#ffffff">ZIELL • ALL MY LINKS  ✦  FIND ME EVERYWHERE  ✦  VIDEO • DESIGN • CODE</text>
+  <text x="600" y="29" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14.5" letter-spacing="3" fill="#ffffff">ZIELL • @T4RAKE  ✦  ALL MY OFFICIAL LINKS  ✦  FIND ME EVERYWHERE  ✦  COMMUNITY &amp; SOCIALS</text>
 
-  <!-- ============ Header ============ -->
-  <g transform="rotate(-2 348 116)">
-    <rect x="238" y="95" width="220" height="42" rx="21" fill="#fb4903" stroke="#000000" stroke-width="2.5"/>
-    <text x="348" y="123" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="15.5" letter-spacing="1" fill="#ffffff">MULTI-CREATOR</text>
-  </g>
-  <g transform="rotate(2 742 116)">
-    <rect x="640" y="95" width="204" height="42" rx="21" fill="#ffd731" stroke="#000000" stroke-width="2.5"/>
-    <text x="742" y="123" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="15.5" letter-spacing="1" fill="#000000">OPEN COLLAB</text>
+  <!-- ============ Sparkles in Background ============ -->
+  <g fill="#000000" opacity="0.85">
+    <path d="M50,72 C51.8,81 58.5,87.8 67.5,89.5 C58.5,91.2 51.8,98 50,107 C48.2,98 41.5,91.2 32.5,89.5 C41.5,87.8 48.2,81 50,72 Z"/>
+    <path d="M1142,66 C1143.8,75 1150.5,81.8 1159.5,83.5 C1150.5,85.2 1143.8,92 1142,101 C1140.2,92 1133.5,85.2 1124.5,83.5 C1133.5,81.8 1140.2,75 1142,66 Z"/>
   </g>
 
-  <text x="600" y="262" text-anchor="middle" font-family="Anton" font-size="128" letter-spacing="2" fill="#000000">LINK HUB</text>
+  <!-- ============ Header Section ============ -->
+  <g transform="rotate(-2 360 95)">
+    <rect x="250" y="75" width="220" height="40" rx="20" fill="#000000"/>
+    <rect x="246" y="71" width="220" height="40" rx="20" fill="#fb4903" stroke="#000000" stroke-width="2.5"/>
+    <text x="356" y="96" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14.5" letter-spacing="1" fill="#ffffff">MULTI-CREATOR</text>
+  </g>
+  <g transform="rotate(2 740 95)">
+    <rect x="634" y="75" width="212" height="40" rx="20" fill="#000000"/>
+    <rect x="630" y="71" width="212" height="40" rx="20" fill="#ffd731" stroke="#000000" stroke-width="2.5"/>
+    <text x="736" y="96" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14.5" letter-spacing="1" fill="#000000">✦ OPEN COLLAB</text>
+  </g>
 
-  <!-- ============ 3 channel cards ============ -->
-  <!-- card 1: WhatsApp -->
-  <rect x="68" y="318" width="330" height="212" rx="26" fill="#000000"/>
-  <rect x="60" y="310" width="330" height="212" rx="26" fill="#ffffff" stroke="#000000" stroke-width="3"/>
-  <circle cx="102" cy="354" r="24" fill="#55db9c" stroke="#000000" stroke-width="2.5"/>
-  <g transform="translate(90,342) scale(1.0)" fill="#000000">
+  <text x="600" y="210" text-anchor="middle" font-family="Anton" font-size="110" letter-spacing="3" fill="#000000">LINK HUB</text>
+  <text x="600" y="244" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="700" font-size="17" fill="#444444">All official links, social media, and community channels in one place.</text>
+
+  <!-- ============ 3 Channel Cards ============ -->
+  <!-- Card 1: WhatsApp -->
+  <rect x="74" y="280" width="326" height="230" rx="28" fill="#000000"/>
+  <rect x="66" y="272" width="326" height="230" rx="28" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+  <circle cx="116" cy="324" r="28" fill="#55db9c" stroke="#000000" stroke-width="2.5"/>
+  <g transform="translate(102,310) scale(1.15)" fill="#000000">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
   </g>
-  <path d="M346,359 L358,347 M348,347 L358,347 L358,357" stroke="#000000" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="90" y="452" font-family="Syne" font-weight="800" font-size="30" fill="#000000">WhatsApp</text>
-  <text x="90" y="482" font-family="Plus Jakarta Sans" font-weight="600" font-size="15" fill="#555555">Updates, drops &amp; announcements</text>
-  <rect x="90" y="498" width="108" height="10" rx="5" fill="#4da2ff" opacity="0"/>
+  <rect x="290" y="302" width="76" height="30" rx="15" fill="#f0f4f8" stroke="#000000" stroke-width="1.8"/>
+  <text x="328" y="322" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="12" fill="#000000">JOIN ↗</text>
+  <text x="96" y="415" font-family="Anton" font-size="34" letter-spacing="1" fill="#000000">WHATSAPP</text>
+  <text x="96" y="445" font-family="Plus Jakarta Sans" font-weight="700" font-size="15" fill="#333333">Channel &amp; Drops</text>
+  <text x="96" y="470" font-family="Plus Jakarta Sans" font-weight="500" font-size="13.5" fill="#666666">Updates, presets, and announcements</text>
 
-  <!-- card 2: Telegram -->
-  <rect x="443" y="318" width="330" height="212" rx="26" fill="#000000"/>
-  <rect x="435" y="310" width="330" height="212" rx="26" fill="#ffffff" stroke="#000000" stroke-width="3"/>
-  <circle cx="477" cy="354" r="24" fill="#4da2ff" stroke="#000000" stroke-width="2.5"/>
-  <g transform="translate(465,342)" fill="#ffffff">
-    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+  <!-- Card 2: Telegram -->
+  <rect x="444" y="280" width="326" height="230" rx="28" fill="#000000"/>
+  <rect x="436" y="272" width="326" height="230" rx="28" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+  <circle cx="486" cy="324" r="28" fill="#4da2ff" stroke="#000000" stroke-width="2.5"/>
+  <g transform="translate(472,310) scale(1.15)" fill="#ffffff">
+    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.541-1.638z"/>
   </g>
-  <path d="M721,359 L733,347 M723,347 L733,347 L733,357" stroke="#000000" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="465" y="452" font-family="Syne" font-weight="800" font-size="30" fill="#000000">Telegram</text>
-  <text x="465" y="482" font-family="Plus Jakarta Sans" font-weight="600" font-size="16" fill="#555555">Channel &amp; files sharing</text>
+  <rect x="660" y="302" width="76" height="30" rx="15" fill="#f0f4f8" stroke="#000000" stroke-width="1.8"/>
+  <text x="698" y="322" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="12" fill="#000000">OPEN ↗</text>
+  <text x="466" y="415" font-family="Anton" font-size="34" letter-spacing="1" fill="#000000">TELEGRAM</text>
+  <text x="466" y="445" font-family="Plus Jakarta Sans" font-weight="700" font-size="15" fill="#333333">Files &amp; Community</text>
+  <text x="466" y="470" font-family="Plus Jakarta Sans" font-weight="500" font-size="13.5" fill="#666666">Cloud file sharing, templates, projects</text>
 
-  <!-- card 3: Discord -->
-  <rect x="818" y="318" width="330" height="212" rx="26" fill="#000000"/>
-  <rect x="810" y="310" width="330" height="212" rx="26" fill="#ffffff" stroke="#000000" stroke-width="3"/>
-  <circle cx="852" cy="354" r="24" fill="#000000" stroke="#000000" stroke-width="2.5"/>
-  <g transform="translate(840,342)" fill="#ffffff">
-    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+  <!-- Card 3: Discord -->
+  <rect x="814" y="280" width="326" height="230" rx="28" fill="#000000"/>
+  <rect x="806" y="272" width="326" height="230" rx="28" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+  <circle cx="856" cy="324" r="28" fill="#000000" stroke="#000000" stroke-width="2.5"/>
+  <g transform="translate(842,310) scale(1.15)" fill="#ffffff">
+    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.929 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
   </g>
-  <path d="M1096,359 L1108,347 M1098,347 L1108,347 L1108,357" stroke="#000000" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  <text x="840" y="452" font-family="Syne" font-weight="800" font-size="30" fill="#000000">Discord</text>
-  <text x="840" y="482" font-family="Plus Jakarta Sans" font-weight="600" font-size="16" fill="#555555">Server — hang out, chat &amp; community</text>
+  <rect x="1030" y="302" width="76" height="30" rx="15" fill="#f0f4f8" stroke="#000000" stroke-width="1.8"/>
+  <text x="1068" y="322" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="12" fill="#000000">JOIN ↗</text>
+  <text x="836" y="415" font-family="Anton" font-size="34" letter-spacing="1" fill="#000000">DISCORD</text>
+  <text x="836" y="445" font-family="Plus Jakarta Sans" font-weight="700" font-size="15" fill="#333333">Community Server</text>
+  <text x="836" y="470" font-family="Plus Jakarta Sans" font-weight="500" font-size="13.5" fill="#666666">Hang out, discussion &amp; collab</text>
 
-  <!-- ============ URL pill ============ -->
-  <rect x="430" y="560" width="340" height="46" rx="23" fill="#000000"/>
-  <text x="600" y="591" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="18" letter-spacing="1.5" fill="#ffffff">ziellvfx.com/links</text>
+  <!-- ============ Bottom Section: Socials & URL ============ -->
+  <g transform="translate(180, 545)">
+    <rect x="0" y="0" width="480" height="46" rx="23" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+    <text x="240" y="29" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="13.5" letter-spacing="2" fill="#000000">TIKTOK • INSTAGRAM • GITHUB</text>
+  </g>
+
+  <!-- Website URL Pill Button -->
+  <g transform="translate(690, 545)">
+    <rect x="4" y="4" width="280" height="46" rx="23" fill="#000000"/>
+    <rect x="0" y="0" width="280" height="46" rx="23" fill="#000000" stroke="#000000" stroke-width="2.5"/>
+    <text x="140" y="29" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="16" letter-spacing="1.5" fill="#ffffff">ziellvfx.com/links ↗</text>
+  </g>
 </svg>
