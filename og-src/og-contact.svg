@@ -1,60 +1,72 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
-    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="48"/></filter>
+    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="55"/></filter>
   </defs>
 
-  <!-- ============ BG concrete + blobs ============ -->
-  <rect width="1200" height="630" fill="#cccccc"/>
+  <!-- ============ Background: Sky Wash & Ambient Glow ============ -->
+  <rect width="1200" height="630" fill="#dceeff"/>
   <g filter="url(#soft)">
-    <circle cx="60" cy="540" r="150" fill="#4da2ff" opacity="0.25"/>
-    <circle cx="1150" cy="100" r="160" fill="#dceeff" opacity="0.85"/>
-    <circle cx="1020" cy="560" r="140" fill="#55db9c" opacity="0.24"/>
-    <circle cx="120" cy="110" r="120" fill="#ffd731" opacity="0.26"/>
+    <circle cx="80" cy="520" r="160" fill="#4da2ff" opacity="0.25"/>
+    <circle cx="1140" cy="110" r="180" fill="#ffffff" opacity="0.90"/>
+    <circle cx="1020" cy="560" r="150" fill="#55db9c" opacity="0.22"/>
+    <circle cx="150" cy="110" r="130" fill="#ffd731" opacity="0.30"/>
   </g>
+  <path d="M0,590 C260,440 470,630 760,510 C980,424 1110,540 1200,496" stroke="#1555a6" stroke-width="24" fill="none" stroke-linecap="round" opacity="0.12"/>
+  <path d="M0,586 C260,436 470,626 760,506 C980,420 1110,536 1200,492" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.75"/>
 
-  <!-- ============ Top marquee bar ============ -->
+  <!-- ============ Top Black Marquee Tape ============ -->
   <rect x="0" y="0" width="1200" height="46" fill="#000000"/>
-  <text x="600" y="30" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="16" letter-spacing="3" fill="#ffffff">ZIELL • LET'S CONNECT  ✦  CONTACT PERSON  ✦  FAST REPLY</text>
+  <text x="600" y="29" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14.5" letter-spacing="3" fill="#ffffff">ZIELL • @T4RAKE  ✦  CONTACT PERSON  ✦  DIRECT MESSAGE &amp; EMAIL  ✦  FAST REPLY</text>
 
-  <!-- ============ Header ============ -->
-  <text x="600" y="188" text-anchor="middle" font-family="Anton" font-size="120" letter-spacing="2" fill="#000000">LET'S CONNECT</text>
-  <p style="display:none"/>
-
-  <!-- ============ Stickers ============ -->
-  <g transform="rotate(-3 426 232)">
-    <rect x="296" y="209" width="260" height="42" rx="21" fill="#55db9c" stroke="#000000" stroke-width="2.5"/>
-    <text x="426" y="237" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="15.5" letter-spacing="1" fill="#000000">CONTACT PERSON</text>
-  </g>
-  <g transform="rotate(2 774 232)">
-    <rect x="668" y="209" width="212" height="42" rx="21" fill="#ffd731" stroke="#000000" stroke-width="2.5"/>
-    <text x="774" y="237" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="15.5" letter-spacing="1" fill="#000000">FAST REPLY</text>
+  <!-- ============ Sparkles in Background ============ -->
+  <g fill="#000000" opacity="0.85">
+    <path d="M50,72 C51.8,81 58.5,87.8 67.5,89.5 C58.5,91.2 51.8,98 50,107 C48.2,98 41.5,91.2 32.5,89.5 C41.5,87.8 48.2,81 50,72 Z"/>
+    <path d="M1142,66 C1143.8,75 1150.5,81.8 1159.5,83.5 C1150.5,85.2 1143.8,92 1142,101 C1140.2,92 1133.5,85.2 1124.5,83.5 C1133.5,81.8 1140.2,75 1142,66 Z"/>
   </g>
 
-  <!-- ============ WhatsApp card ============ -->
-  <rect x="156" y="284" width="900" height="128" rx="28" fill="#000000"/>
-  <rect x="150" y="278" width="900" height="128" rx="28" fill="#ffffff" stroke="#000000" stroke-width="3"/>
-  <circle cx="228" cy="342" r="40" fill="#55db9c" stroke="#000000" stroke-width="2.5"/>
-  <g transform="translate(202,316) scale(2.2)" fill="#000000">
+  <!-- ============ Header Section ============ -->
+  <g transform="rotate(-2 380 95)">
+    <rect x="250" y="75" width="230" height="40" rx="20" fill="#000000"/>
+    <rect x="246" y="71" width="230" height="40" rx="20" fill="#55db9c" stroke="#000000" stroke-width="2.5"/>
+    <text x="361" y="96" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14" letter-spacing="1" fill="#000000">CONTACT PERSON</text>
+  </g>
+  <g transform="rotate(2 720 95)">
+    <rect x="624" y="75" width="202" height="40" rx="20" fill="#000000"/>
+    <rect x="620" y="71" width="202" height="40" rx="20" fill="#ffd731" stroke="#000000" stroke-width="2.5"/>
+    <text x="721" y="96" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14" letter-spacing="1" fill="#000000">✦ FAST REPLY</text>
+  </g>
+
+  <text x="600" y="210" text-anchor="middle" font-family="Anton" font-size="110" letter-spacing="3" fill="#000000">LET'S CONNECT</text>
+  <text x="600" y="244" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="700" font-size="17" fill="#444444">Have a project, idea, or question? Send a message directly.</text>
+
+  <!-- ============ WhatsApp Card ============ -->
+  <rect x="136" y="278" width="936" height="120" rx="26" fill="#000000"/>
+  <rect x="128" y="270" width="936" height="120" rx="26" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+  <circle cx="196" cy="330" r="34" fill="#55db9c" stroke="#000000" stroke-width="2.5"/>
+  <g transform="translate(178,312) scale(1.5)" fill="#000000">
     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
   </g>
-  <text x="296" y="334" font-family="Plus Jakarta Sans" font-weight="bold" font-size="14" letter-spacing="2" fill="#666666">WHATSAPP · DIRECT</text>
-  <text x="296" y="376" font-family="Plus Jakarta Sans" font-weight="800" font-size="30" fill="#000000">+62 831-9931-2511</text>
-  <rect x="906" y="316" width="204" height="52" rx="26" fill="#000000"/>
-  <text x="1008" y="348" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="15" letter-spacing="1.5" fill="#ffffff">MESSAGE ✈</text>
+  <text x="254" y="318" font-family="Plus Jakarta Sans" font-weight="800" font-size="13" letter-spacing="2" fill="#666666">WHATSAPP · DIRECT CHAT</text>
+  <text x="254" y="358" font-family="Plus Jakarta Sans" font-weight="800" font-size="28" fill="#000000">+62 831-9931-2511</text>
+  <rect x="880" y="306" width="154" height="48" rx="24" fill="#000000"/>
+  <text x="957" y="336" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14" letter-spacing="1" fill="#ffffff">CHAT NOW ✈</text>
 
-  <!-- ============ Email card ============ -->
-  <rect x="156" y="428" width="900" height="112" rx="28" fill="#000000"/>
-  <rect x="150" y="422" width="900" height="112" rx="28" fill="#ffffff" stroke="#000000" stroke-width="3"/>
-  <circle cx="228" cy="478" r="40" fill="#ffd731" stroke="#000000" stroke-width="2.5"/>
-  <g transform="translate(206,456) scale(2.2)" fill="#000000">
+  <!-- ============ Email Card ============ -->
+  <rect x="136" y="418" width="936" height="110" rx="26" fill="#000000"/>
+  <rect x="128" y="410" width="936" height="110" rx="26" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+  <circle cx="196" cy="465" r="34" fill="#ffd731" stroke="#000000" stroke-width="2.5"/>
+  <g transform="translate(178,447) scale(1.5)" fill="#000000">
     <path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 .5 8 6.5 8-6.5V6H4v.5zm8 9L4 9.3V18h16V9.3l-8 6.2z"/>
   </g>
-  <text x="296" y="466" font-family="Plus Jakarta Sans" font-weight="bold" font-size="14" letter-spacing="2" fill="#666666">EMAIL</text>
-  <text x="296" y="504" font-family="Plus Jakarta Sans" font-weight="800" font-size="26" fill="#000000">hello@ziellvfx.com</text>
-  <rect x="906" y="452" width="204" height="52" rx="26" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
-  <text x="1008" y="484" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="15" letter-spacing="1.5" fill="#000000">SAY HI ↗</text>
+  <text x="254" y="453" font-family="Plus Jakarta Sans" font-weight="800" font-size="13" letter-spacing="2" fill="#666666">EMAIL · OFFICIAL INQUIRIES</text>
+  <text x="254" y="491" font-family="Plus Jakarta Sans" font-weight="800" font-size="26" fill="#000000">hello@ziellvfx.com</text>
+  <rect x="880" y="441" width="154" height="48" rx="24" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+  <text x="957" y="471" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14" letter-spacing="1" fill="#000000">SAY HI ↗</text>
 
-  <!-- ============ URL pill ============ -->
-  <rect x="420" y="560" width="360" height="46" rx="23" fill="#000000"/>
-  <text x="600" y="591" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="bold" font-size="18" letter-spacing="1.5" fill="#ffffff">ziellvfx.com/contact</text>
+  <!-- ============ Bottom Website URL Pill ============ -->
+  <g transform="translate(450, 550)">
+    <rect x="4" y="4" width="300" height="46" rx="23" fill="#000000"/>
+    <rect x="0" y="0" width="300" height="46" rx="23" fill="#000000" stroke="#000000" stroke-width="2.5"/>
+    <text x="150" y="29" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="16" letter-spacing="1.5" fill="#ffffff">ziellvfx.com/contact ↗</text>
+  </g>
 </svg>
