@@ -13,7 +13,7 @@
     <circle cx="150" cy="110" r="130" fill="#ffd731" opacity="0.35"/>
   </g>
 
-  <!-- Background playful wave lines -->
+  <!-- Background wave decoration -->
   <path d="M0,590 C260,440 470,630 760,510 C980,424 1110,540 1200,496" stroke="#1555a6" stroke-width="24" fill="none" stroke-linecap="round" opacity="0.12"/>
   <path d="M0,586 C260,436 470,626 760,506 C980,420 1110,536 1200,492" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.75"/>
 
@@ -34,12 +34,11 @@
   <!-- Card Base -->
   <rect x="78" y="78" width="1040" height="500" rx="36" fill="#ffffff" stroke="#000000" stroke-width="3.5"/>
 
-  <!-- Card Top Badge: CREATOR PORTFOLIO -->
+  <!-- Card Top Badges -->
   <rect x="120" y="104" width="200" height="30" rx="15" fill="#f0f4f8" stroke="#000000" stroke-width="2"/>
   <text x="220" y="124" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="11.5" letter-spacing="1.5" fill="#000000">CREATOR PORTFOLIO</text>
 
   <!-- ============ Left Column: Avatar & Collab Sticker ============ -->
-  <!-- Avatar shadow + card -->
   <rect x="133" y="149" width="172" height="172" rx="38" fill="#000000"/>
   <rect x="129" y="145" width="172" height="172" rx="38" fill="#ffffff" stroke="#000000" stroke-width="3"/>
   <g clip-path="url(#avclip)">
@@ -53,23 +52,27 @@
     <text x="211" y="354" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="13" letter-spacing="0.8" fill="#000000">✦ OPEN FOR COLLAB</text>
   </g>
 
-  <!-- ============ Right Column: Handle, Name & Info ============ -->
+  <!-- ============ Right Column: Info & Punchy Typography ============ -->
   <!-- Handle & Location pill -->
-  <rect x="350" y="104" width="260" height="32" rx="16" fill="#ffffff" stroke="#000000" stroke-width="2"/>
-  <text x="480" y="125" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="13" letter-spacing="1.2" fill="#000000">@T4RAKE  •  INDONESIA</text>
+  <rect x="348" y="104" width="230" height="30" rx="15" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+  <text x="463" y="124" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="12.5" letter-spacing="1.2" fill="#000000">@T4RAKE  •  INDONESIA</text>
 
-  <!-- Big Name in Syne -->
-  <text x="350" y="222" font-family="Syne" font-weight="800" font-size="92" letter-spacing="-1" fill="#000000">ZIELL</text>
+  <!-- Available Status Pill -->
+  <rect x="590" y="104" width="140" height="30" rx="15" fill="#55db9c" stroke="#000000" stroke-width="2"/>
+  <text x="660" y="124" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="12" letter-spacing="1" fill="#000000">● AVAILABLE</text>
+
+  <!-- Big Name in Anton -->
+  <text x="345" y="240" font-family="Anton" font-size="115" letter-spacing="3" fill="#000000">ZIELL</text>
 
   <!-- Headline sticker -->
-  <g transform="rotate(-1 530 250)">
-    <rect x="350" y="238" width="360" height="32" rx="16" fill="#fb4903" stroke="#000000" stroke-width="2"/>
-    <text x="530" y="260" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14" letter-spacing="1.5" fill="#ffffff">MULTI-DISCIPLINARY CREATOR</text>
+  <g transform="rotate(-1 530 266)">
+    <rect x="348" y="254" width="350" height="32" rx="16" fill="#fb4903" stroke="#000000" stroke-width="2"/>
+    <text x="523" y="276" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="13.5" letter-spacing="1.5" fill="#ffffff">MULTI-DISCIPLINARY CREATOR</text>
   </g>
 
   <!-- Taglines / Intro -->
-  <text x="350" y="310" font-family="Plus Jakarta Sans" font-weight="800" font-size="20" fill="#111111">Building things across video, design, and code.</text>
-  <text x="350" y="340" font-family="Plus Jakarta Sans" font-weight="600" font-size="16" fill="#444444">Official link hub, client direct contact, and creative projects.</text>
+  <text x="348" y="322" font-family="Plus Jakarta Sans" font-weight="800" font-size="20" fill="#111111">Building things across video, design, and code.</text>
+  <text x="348" y="352" font-family="Plus Jakarta Sans" font-weight="600" font-size="16" fill="#444444">Official link hub, client direct contact, and creative projects.</text>
 
   <!-- Dashed divider -->
   <line x1="110" y1="392" x2="1080" y2="392" stroke="#000000" stroke-width="2.5" stroke-dasharray="6 6"/>
