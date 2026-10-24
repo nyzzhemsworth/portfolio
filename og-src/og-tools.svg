@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="55"/></filter>
+  </defs>
+
+  <!-- ============ Background: Sky Wash & Ambient Glow ============ -->
+  <rect width="1200" height="630" fill="#dceeff"/>
+  <g filter="url(#soft)">
+    <circle cx="80" cy="520" r="160" fill="#4da2ff" opacity="0.25"/>
+    <circle cx="1140" cy="110" r="180" fill="#ffffff" opacity="0.90"/>
+    <circle cx="1020" cy="560" r="150" fill="#55db9c" opacity="0.22"/>
+    <circle cx="150" cy="110" r="130" fill="#ffd731" opacity="0.30"/>
+  </g>
+  <path d="M0,590 C260,440 470,630 760,510 C980,424 1110,540 1200,496" stroke="#1555a6" stroke-width="24" fill="none" stroke-linecap="round" opacity="0.12"/>
+  <path d="M0,586 C260,436 470,626 760,506 C980,420 1110,536 1200,492" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- ============ Top Black Marquee Tape ============ -->
+  <rect x="0" y="0" width="1200" height="46" fill="#000000"/>
+  <text x="600" y="29" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14.5" letter-spacing="3" fill="#ffffff">ZIELL • @T4RAKE  ✦  TOOLS &amp; PROJECTS  ✦  ALIGHT MOTION  ✦  COMPRESS METHOD  ✦  FREE UTILITIES</text>
+
+  <!-- ============ Sparkles in Background ============ -->
+  <g fill="#000000" opacity="0.85">
+    <path d="M50,72 C51.8,81 58.5,87.8 67.5,89.5 C58.5,91.2 51.8,98 50,107 C48.2,98 41.5,91.2 32.5,89.5 C41.5,87.8 48.2,81 50,72 Z"/>
+    <path d="M1142,66 C1143.8,75 1150.5,81.8 1159.5,83.5 C1150.5,85.2 1143.8,92 1142,101 C1140.2,92 1133.5,85.2 1124.5,83.5 C1133.5,81.8 1140.2,75 1142,66 Z"/>
+  </g>
+
+  <!-- ============ Header Section ============ -->
+  <g transform="rotate(-2 360 95)">
+    <rect x="236" y="75" width="248" height="40" rx="20" fill="#000000"/>
+    <rect x="232" y="71" width="248" height="40" rx="20" fill="#4da2ff" stroke="#000000" stroke-width="2.5"/>
+    <text x="356" y="96" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14" letter-spacing="1" fill="#000000">ONLINE UTILITIES</text>
+  </g>
+  <g transform="rotate(2 740 95)">
+    <rect x="634" y="75" width="212" height="40" rx="20" fill="#000000"/>
+    <rect x="630" y="71" width="212" height="40" rx="20" fill="#55db9c" stroke="#000000" stroke-width="2.5"/>
+    <text x="736" y="96" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="14" letter-spacing="1" fill="#000000">✦ FREE TOOLS</text>
+  </g>
+
+  <text x="600" y="210" text-anchor="middle" font-family="Anton" font-size="105" letter-spacing="3" fill="#000000">TOOLS &amp; PROJECTS</text>
+  <text x="600" y="244" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="700" font-size="17" fill="#444444">Curated collection of tools, automation utilities, and media processors.</text>
+
+  <!-- ============ 2 Main Featured Cards ============ -->
+  <!-- Card 1: Alight Motion -->
+  <rect x="94" y="278" width="490" height="232" rx="28" fill="#000000"/>
+  <rect x="86" y="270" width="490" height="232" rx="28" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+  <circle cx="136" cy="324" r="28" fill="#55db9c" stroke="#000000" stroke-width="2.5"/>
+  <text x="136" y="333" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="22" fill="#000000">AM</text>
+  <rect x="470" y="300" width="80" height="30" rx="15" fill="#55db9c" stroke="#000000" stroke-width="2"/>
+  <text x="510" y="320" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="12" fill="#000000">● LIVE</text>
+  <text x="116" y="405" font-family="Anton" font-size="34" letter-spacing="1" fill="#000000">ALIGHT MOTION PREMIUM</text>
+  <text x="116" y="435" font-family="Plus Jakarta Sans" font-weight="700" font-size="15" fill="#fb4903">Paket Annual &amp; Verifikasi Akun Otomatis</text>
+  <text x="116" y="465" font-family="Plus Jakarta Sans" font-weight="500" font-size="14" fill="#666666">Login 1-klik, link generator, dan auto akun instan.</text>
+
+  <!-- Card 2: Compress Method -->
+  <rect x="626" y="278" width="490" height="232" rx="28" fill="#000000"/>
+  <rect x="618" y="270" width="490" height="232" rx="28" fill="#ffffff" stroke="#000000" stroke-width="3"/>
+  <circle cx="668" cy="324" r="28" fill="#ffd731" stroke="#000000" stroke-width="2.5"/>
+  <text x="668" y="333" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="22" fill="#000000">CM</text>
+  <rect x="1002" y="300" width="80" height="30" rx="15" fill="#55db9c" stroke="#000000" stroke-width="2"/>
+  <text x="1042" y="320" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="12" fill="#000000">● LIVE</text>
+  <text x="648" y="405" font-family="Anton" font-size="34" letter-spacing="1" fill="#000000">COMPRESS METHOD</text>
+  <text x="648" y="435" font-family="Plus Jakarta Sans" font-weight="700" font-size="15" fill="#4da2ff">Client-side MP4 Metadata Patcher</text>
+  <text x="648" y="465" font-family="Plus Jakarta Sans" font-weight="500" font-size="14" fill="#666666">Patch metadata MP4 ala CompressBase. 100% di browser.</text>
+
+  <!-- ============ Bottom Website URL Pill ============ -->
+  <g transform="translate(460, 545)">
+    <rect x="4" y="4" width="280" height="46" rx="23" fill="#000000"/>
+    <rect x="0" y="0" width="280" height="46" rx="23" fill="#000000" stroke="#000000" stroke-width="2.5"/>
+    <text x="140" y="29" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="800" font-size="16" letter-spacing="1.5" fill="#ffffff">ziellvfx.com/tools ↗</text>
+  </g>
+</svg>
