@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link2, MessageCircle, MapPin } from 'lucide-react';
+import { Link2, MessageCircle, MapPin, Wrench } from 'lucide-react';
 import Sticker from './Sticker';
 import Reveal from './Reveal';
 import BackgroundDecor from './BackgroundDecor';
@@ -75,6 +75,13 @@ export default function HeroSection() {
             >
               <Link2 className="w-4 h-4" />
               <span>My Links</span>
+            </a>
+            <a
+              href="/tools"
+              className="w-full sm:w-auto px-7 py-3.5 rounded-full border border-black bg-[#ffd731] text-black font-bold text-xs sm:text-sm uppercase tracking-[0.032em] hover:bg-[#ffdf66] active:scale-95 transition-all flex items-center justify-center gap-2"
+            >
+              <Wrench className="w-4 h-4" />
+              <span>Tools</span>
             </a>
             <a
               href="/contact"

@@ -7,6 +7,7 @@ export default function Navbar({ onContactClick }) {
 
   const pills = [
     { href: '/links', label: 'My Links' },
+    { href: '/tools', label: 'Tools' },
     { href: '/contact', label: 'Contact' },
   ];
 
@@ -59,7 +60,7 @@ export default function Navbar({ onContactClick }) {
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
         <div className="lg:hidden mt-2 p-3 sm:p-4 rounded-[20px] border border-black bg-white space-y-2.5 shadow-none animate-in fade-in slide-in-from-top-2 duration-150">
-          <div className="grid grid-cols-2 gap-2 pt-1">
+          <div className="grid grid-cols-3 gap-2 pt-1">
             {pills.map((p) => (
               <a
                 key={p.href}
