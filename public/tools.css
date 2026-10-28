@@ -1,0 +1,56 @@
+/* ============================================================
+   Shared styles for standalone tool pages (/tools, /tools/*)
+   Stable URL so it survives Vite hash changes.
+   ============================================================ */
+
+/* Scroll reveal — sama seperti landing page */
+.reveal {
+  opacity: 0;
+  transform: translateY(var(--reveal-y, 24px));
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Floating animation untuk badge kecil */
+@keyframes float-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-float-soft {
+  animation: float-soft 3.5s ease-in-out infinite;
+}
+
+/* Hover sticker/pill */
+.sticker-hover {
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.sticker-hover:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+}
+
+/* Form controls ikut font halaman (sebelumnya datang dari Tailwind preflight) */
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .animate-float-soft,
+  .sticker-hover {
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
