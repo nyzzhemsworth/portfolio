@@ -565,7 +565,11 @@
           const { data } = await api('/auto');
           if (data.ok){
             showRes('res-auto',
-              '<div class="note ok"><div>🎉 1 akun siap pakai!</div></div>' +
+              '<div class="note ok"><div>🎉 1 akun siap pakai!</div>' +
+              '<div class="hint">' + (data.inbox
+                ? 'Login di Alight Motion pakai email + password. Kalau app minta link, buka mail.tm dengan email & password yang sama.'
+                : 'Login pakai email + password. Email ini bukan inbox aktif.') +
+              '</div></div>' +
               preBlock({ email: data.email, password: data.password, order: data.order, aktif_sampai: data.expiryText, uid: data.uid }));
             addHistory({ source:'auto', email:data.email, password:data.password, uid:data.uid,
                          order:data.order, expiry:data.expiry, expiryText:data.expiryText, at:Date.now() });
