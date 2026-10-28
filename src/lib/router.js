@@ -71,11 +71,13 @@ export function usePathRouting() {
       if (!href) return;
 
       // Link internal berbasis path, misal /links
+      // Catatan: hanya intercept route yang memang dikelola SPA.
+      // /tools adalah halaman statis terpisah -> biarkan browser navigasi normal.
       if (href.startsWith('/') && !href.startsWith('//')) {
-        const target = normalize(href);
-        if (ROUTES[target]) {
+        const path = (href.split(/[?#]/)[0].replace(/\/+$/, '') || '/');
+        if (ROUTES[path]) {
           event.preventDefault();
-          navigate(target);
+          navigate(path);
         }
         return;
       }
