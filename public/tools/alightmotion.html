@@ -331,8 +331,9 @@
           <div class="tabbody" id="v-auto">
             <div style="margin-bottom:12px"><span class="sticker-cmd">Full otomatis — bikin 1 akun</span></div>
             <p style="font-weight:500;font-size:.92rem;margin-bottom:18px">
-              Sistem bikin email sementara, kirim link, polling inbox, verifikasi, dan klaim premium —
-              kamu tinggal tunggu hasilnya (30–90 detik).
+              Sistem bikin akun email + password lalu langsung klaim premium —
+              tanpa kirim email, jadi nggak kena quota. Prosesnya cuma beberapa detik.
+              Simpan email &amp; password yang muncul buat login Alight Motion.
             </p>
             <button class="btn yellow" id="btn-auto" onclick="doAuto()">Bikin 1 Akun Otomatis</button>
             <div class="result" id="res-auto"></div>
@@ -558,8 +559,8 @@
       }
 
       async function doAuto(){
-        busy('btn-auto', true, 'Membikin akun… (30–90 detik)');
-        showRes('res-auto','<span class="loader"></span><b>Proses berjalan… email temp → link → verifikasi → klaim</b>');
+        busy('btn-auto', true, 'Membikin akun… (±5–15 detik)');
+        showRes('res-auto','<span class="loader"></span><b>Proses berjalan… buat akun → klaim premium</b>');
         try{
           const { data } = await api('/auto');
           if (data.ok){
